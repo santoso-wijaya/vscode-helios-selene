@@ -1,6 +1,6 @@
 {
   "name": "helios-selene",
-  "displayName": "Sol et Luna",
+  "displayName": "Solarized & Selenized",
   "description": "A Solarized and Selenized themes combo for Visual Studio Code",
   "version": "0.0.1",
   "engines": {
@@ -12,10 +12,24 @@
   "contributes": {
     "themes": [
       {
-        "label": "Solarized & Selenized",
+        "label": "Solarized Light",
         "uiTheme": "vs",
-        "path": "./themes/Solarized & Selenized-color-theme.json"
+        "path": "./themes/Solarized Light-color-theme.json"
       }
     ]
-  }
+  },
+  "keywords": [
+    "solarized",
+    "solarized dark",
+    "solarized light",
+    "selenized",
+    "selenized light",
+    "selenized dark"
+  ],
+  "homepage": "https://github.com/santoso-wijaya/vscode-helios-selene",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santoso-wijaya/vscode-helios-selene.git"
+  },
+  "bugs": "https://github.com/santoso-wijaya/vscode-helios-selene/issues"
 }
