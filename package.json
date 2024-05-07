@@ -1,0 +1,21 @@
+{
+  "name": "helios-selene",
+  "displayName": "Sol et Luna",
+  "description": "A Solarized and Selenized themes combo for Visual Studio Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Solarized & Selenized",
+        "uiTheme": "vs",
+        "path": "./themes/Solarized & Selenized-color-theme.json"
+      }
+    ]
+  }
+}
