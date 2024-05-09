@@ -1,22 +1,24 @@
 {% comment %}
-Instantiate this template with `solarized-light.yaml` source:
+Instantiate this template with `selenized-light.yaml` source:
 
 $ pushd ../base16cs && \
 		cargo run -p base16cs-cli -- \
 		--unroll_colors_hex \
-		--palette ../vscode-helios-selene/palettes/solarized-light.yaml \
-		../vscode-helios-selene/themes/Solarized\ Light-color-theme.json.liquid \
-	> ../vscode-helios-selene/themes/Solarized\ Light-color-theme.json && \
+		--palette ../vscode-helios-selene/palettes/selenized-light.yaml \
+		--partials_dir ../vscode-helios-selene/themes \
+		../vscode-helios-selene/themes/Selenized\ Light-color-theme.json.liquid \
+	> ../vscode-helios-selene/themes/Selenized\ Light-color-theme.json && \
 	popd
 {% endcomment -%}
 {
-	"name": "Solarized Light",
+	"name": "Selenized Light",
 	"type": "light",
+
 	"colors": {
-		"editor.background": "#f5f5f5",
-		"editor.foreground": "#333333",
-        "list.activeSelectionIconForeground": "#fff"
+		"editor.background": "#{{ bg_0 }}",
+		"editor.foreground": "#{{ fg_0 }}"
 	},
+
 	"tokenColors": [
 		{
 			"name": "Comments",
@@ -421,5 +423,10 @@ $ pushd ../base16cs && \
 				"foreground": "#434343"
 			}
 		}
-	]
+	],
+
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		// TODO
+	}
 }

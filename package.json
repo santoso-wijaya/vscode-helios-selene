@@ -12,9 +12,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Solarized Light",
+        "label": "Selenized Light",
         "uiTheme": "vs",
-        "path": "./themes/Solarized Light-color-theme.json"
+        "path": "./themes/Selenized Light-color-theme.json"
       }
     ]
   },

@@ -1,11 +1,12 @@
 {
-	"name": "Solarized Light",
+	"name": "Selenized Light",
 	"type": "light",
+
 	"colors": {
-		"editor.background": "#f5f5f5",
-		"editor.foreground": "#333333",
-        "list.activeSelectionIconForeground": "#fff"
+		"editor.background": "#fef3da",
+		"editor.foreground": "#52666d"
 	},
+
 	"tokenColors": [
 		{
 			"name": "Comments",
@@ -410,5 +411,10 @@
 				"foreground": "#434343"
 			}
 		}
-	]
+	],
+
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		// TODO
+	}
 }
