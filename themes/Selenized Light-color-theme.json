@@ -4,10 +4,10 @@
 //    cargo run -p base16cs-cli -- \
 //    --unroll_colors_hex \
 //    --palette ../vscode-helios-selene/palettes/selenized-light.yaml \
-//    --partials_dir ../vscode-helios-selene/themes/selenized \
-//    ../vscode-helios-selene/themes/selenized/light-color-theme.json.liquid \
-//    > ../vscode-helios-selene/themes/Selenized\ Light-color-theme.json && \
-//    popd
+//    -d ../vscode-helios-selene/themes/common \
+//    -t ../vscode-helios-selene/themes/selenized/light-color-theme.json.liquid \
+//    > ../vscode-helios-selene/themes/Selenized\ Light-color-theme.json \
+//    ; popd
 
 {
   "name": "Selenized Light",

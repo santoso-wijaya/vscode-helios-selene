@@ -4,22 +4,24 @@
 //    cargo run -p base16cs-cli -- \
 //    --unroll_colors_hex \
 //    --palette ../vscode-helios-selene/palettes/selenized-dark.yaml \
-//    --partials_dir ../vscode-helios-selene/themes/selenized \
-//    ../vscode-helios-selene/themes/selenized/dark-color-theme.json.liquid \
-//    > ../vscode-helios-selene/themes/Selenized\ Dark-color-theme.json && \
-//    popd
-{% assign type = "dark" %}
+//    -d ../vscode-helios-selene/themes/common \
+//    -t ../vscode-helios-selene/themes/selenized/dark-color-theme.json.liquid \
+//    > ../vscode-helios-selene/themes/Selenized\ Dark-color-theme.json \
+//    ; popd
+
+{%- assign type = "dark" %}
+
 {
   "name": "Selenized Dark",
   "type": "{{ type }}",
 
   // Workbench (UI) colors
-  "colors": {% include "_common-workbench-colors.liquid" %},
+  "colors": {% include "workbench-colors.json.liquid" %},
 
   // TextMate scoped token highlight colors (fallback)
-  "tokenColors": {% include "_common-token-colors.liquid" %},
+  "tokenColors": {% include "token-colors.json.liquid" %},
 
   // Semantic token (LSP-provided) colors
   "semanticHighlighting": true,
-  "semanticTokenColors": {% include "_common-semantic-token-colors.liquid" %}
+  "semanticTokenColors": {% include "semantic-token-colors.json.liquid" %}
 }

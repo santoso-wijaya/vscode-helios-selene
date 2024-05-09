@@ -4,10 +4,10 @@
 //    cargo run -p base16cs-cli -- \
 //    --unroll_colors_hex \
 //    --palette ../vscode-helios-selene/palettes/selenized-dark.yaml \
-//    --partials_dir ../vscode-helios-selene/themes/selenized \
-//    ../vscode-helios-selene/themes/selenized/dark-color-theme.json.liquid \
-//    > ../vscode-helios-selene/themes/Selenized\ Dark-color-theme.json && \
-//    popd
+//    -d ../vscode-helios-selene/themes/common \
+//    -t ../vscode-helios-selene/themes/selenized/dark-color-theme.json.liquid \
+//    > ../vscode-helios-selene/themes/Selenized\ Dark-color-theme.json \
+//    ; popd
 
 {
   "name": "Selenized Dark",
