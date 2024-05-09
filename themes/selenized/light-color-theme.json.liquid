@@ -1,0 +1,21 @@
+// This is a generated file!
+//
+// $ pushd ../base16cs && \
+//    cargo run -p base16cs-cli -- \
+//    --unroll_colors_hex \
+//    --palette ../vscode-helios-selene/palettes/selenized-light.yaml \
+//    --partials_dir ../vscode-helios-selene/themes/selenized \
+//    ../vscode-helios-selene/themes/selenized/light-color-theme.json.liquid \
+//    > ../vscode-helios-selene/themes/Selenized\ Light-color-theme.json && \
+//    popd
+{
+  "name": "Selenized Light",
+  "type": "light",
+
+  "colors": {% include "_common-colors.liquid" %},
+
+  "tokenColors": {% include "_common-token-colors.liquid" %},
+
+  "semanticHighlighting": true,
+  "semanticTokenColors": {% include "_common-semantic-token-colors.liquid" %}
+}
