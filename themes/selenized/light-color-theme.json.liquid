@@ -8,9 +8,10 @@
 //    ../vscode-helios-selene/themes/selenized/light-color-theme.json.liquid \
 //    > ../vscode-helios-selene/themes/Selenized\ Light-color-theme.json && \
 //    popd
+{% assign type = "light" %}
 {
   "name": "Selenized Light",
-  "type": "light",
+  "type": "{{ type }}",
 
   "colors": {% include "_common-colors.liquid" %},
 
