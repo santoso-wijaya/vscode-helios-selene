@@ -1,5 +1,13 @@
-// This is for theming the UI in general.
-// See: https://code.visualstudio.com/api/references/theme-color
+{% comment -%}
+  This is for theming the Workbench (UI).
+  See: https://code.visualstudio.com/api/references/theme-color
+{% endcomment -%}
+
+{%- if type == "dark" -%}
+  {% assign interactive_color = blue -%}
+{% else -%}
+  {% assign interactive_color = yellow -%}
+{% endif -%}
 {
   // Base colors
   "foreground": "#{{ fg_1 }}",
@@ -8,7 +16,7 @@
   "selection.background": "#{{ bg_2 }}",
 
   // Button control
-  "button.background": "#{{ yellow }}",
+  "button.background": "#{{ interactive_color }}",
 
   // Dropdown control
   "dropdown.background": "#{{ bg_1 }}",
@@ -22,23 +30,22 @@
   "inputOption.activeBorder": "#{{ cyan }}99",
 
   // Badge
-  "badge.background": "#{{ yellow }}AA",
+  "badge.background": "#{{ interactive_color }}AA",
 
   // Progress bar
-  "progressBar.background": "#{{ yellow }}",
+  "progressBar.background": "#{{ interactive_color }}",
 
   // Lists and trees
-  "list.activeSelectionBackground": "#{{ yellow }}",
-  "list.activeSelectionForeground": "#{{ bg_2 }}",
-  "list.focusBackground": "#{{ yellow }}66",
-  "list.hoverBackground": "#{{ yellow }}44",
-  "list.inactiveSelectionBackground": "#{{ bg_1 }}",
-  "list.highlightForeground": "#{{ yellow }}",
+  "list.activeSelectionBackground": "#{{ interactive_color }}88",
+  "list.inactiveSelectionBackground": "#{{ bg_2 }}",
+  "list.focusBackground": "#{{ interactive_color }}66",
+  "list.hoverBackground": "#{{ interactive_color }}44",
+  "list.highlightForeground": "#{{ interactive_color }}",
 
   // Activity Bar
   "activityBar.background": "#{{ bg_2 }}",
   "activityBar.foreground": "#{{ fg_1 }}",
-  "activityBarBadge.background": "#{{ yellow }}AA",
+  "activityBarBadge.background": "#{{ interactive_color }}AA",
 
   // Side Bar
   "sideBar.background": "#{{ bg_1 }}",
@@ -83,7 +90,7 @@
   "peekViewEditor.matchHighlightBackground": "#{{ violet }}40",
   "peekViewResult.background": "#{{ bg_1 }}",
   "peekViewTitle.background": "#{{ bg_1 }}",
-  "peekView.border": "#{{ yellow }}",
+  "peekView.border": "#{{ interactive_color }}",
 
   // Title Bar colors
   "titleBar.activeBackground": "#{{ bg_1 }}",
@@ -96,7 +103,7 @@
   "statusBar.background": "#{{ bg_1 }}",
   "statusBar.debuggingBackground": "#{{ bg_1 }}",
   "statusBar.noFolderBackground": "#{{ bg_1 }}",
-  "statusBarItem.remoteBackground": "#{{ yellow }}",
+  "statusBarItem.remoteBackground": "#{{ interactive_color }}",
   "statusBarItem.prominentBackground": "#{{ bg_0 }}",
   "statusBarItem.prominentHoverBackground": "#{{ bg_2 }}99",
 
@@ -110,7 +117,7 @@
   "pickerGroup.foreground": "#{{ cyan }}99",
 
   // Extensions
-  "extensionButton.prominentBackground": "#{{ yellow }}",
+  "extensionButton.prominentBackground": "#{{ interactive_color }}",
   "extensionButton.prominentHoverBackground": "#{{ orange }}AA",
 
   // Integrated Terminal colors

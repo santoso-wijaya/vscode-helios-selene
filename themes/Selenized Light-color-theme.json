@@ -13,9 +13,8 @@
   "name": "Selenized Light",
   "type": "light",
 
-  "colors": // This is for theming the UI in general.
-// See: https://code.visualstudio.com/api/references/theme-color
-{
+  // Workbench (UI) colors
+  "colors": {
   // Base colors
   "foreground": "#384c52",
   "disabledForeground": "#8f9894",
@@ -43,11 +42,10 @@
   "progressBar.background": "#b38800",
 
   // Lists and trees
-  "list.activeSelectionBackground": "#b38800",
-  "list.activeSelectionForeground": "#d6cbb4",
+  "list.activeSelectionBackground": "#b3880088",
+  "list.inactiveSelectionBackground": "#d6cbb4",
   "list.focusBackground": "#b3880066",
   "list.hoverBackground": "#b3880044",
-  "list.inactiveSelectionBackground": "#f0e4cc",
   "list.highlightForeground": "#b38800",
 
   // Activity Bar
@@ -162,6 +160,7 @@
 }
 ,
 
+  // TextMate scoped token highlight colors (fallback)
   "tokenColors": [
   {
     "name": "Comments",
@@ -569,6 +568,7 @@
 ]
 ,
 
+  // Semantic token (LSP-provided) colors
   "semanticHighlighting": true,
   "semanticTokenColors": {
   // TODO

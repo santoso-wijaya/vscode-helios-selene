@@ -14,9 +14,7 @@
   "type": "dark",
 
   // Workbench (UI) colors
-  "colors": // This is for theming the UI in general.
-// See: https://code.visualstudio.com/api/references/theme-color
-{
+  "colors": {
   // Base colors
   "foreground": "#c8d7d8",
   "disabledForeground": "#718b90",
@@ -24,7 +22,7 @@
   "selection.background": "#275b69",
 
   // Button control
-  "button.background": "#e3b230",
+  "button.background": "#0096f5",
 
   // Dropdown control
   "dropdown.background": "#0e4956",
@@ -38,23 +36,22 @@
   "inputOption.activeBorder": "#39c7b999",
 
   // Badge
-  "badge.background": "#e3b230AA",
+  "badge.background": "#0096f5AA",
 
   // Progress bar
-  "progressBar.background": "#e3b230",
+  "progressBar.background": "#0096f5",
 
   // Lists and trees
-  "list.activeSelectionBackground": "#e3b230",
-  "list.activeSelectionForeground": "#275b69",
-  "list.focusBackground": "#e3b23066",
-  "list.hoverBackground": "#e3b23044",
-  "list.inactiveSelectionBackground": "#0e4956",
-  "list.highlightForeground": "#e3b230",
+  "list.activeSelectionBackground": "#0096f588",
+  "list.inactiveSelectionBackground": "#275b69",
+  "list.focusBackground": "#0096f566",
+  "list.hoverBackground": "#0096f544",
+  "list.highlightForeground": "#0096f5",
 
   // Activity Bar
   "activityBar.background": "#275b69",
   "activityBar.foreground": "#c8d7d8",
-  "activityBarBadge.background": "#e3b230AA",
+  "activityBarBadge.background": "#0096f5AA",
 
   // Side Bar
   "sideBar.background": "#0e4956",
@@ -99,7 +96,7 @@
   "peekViewEditor.matchHighlightBackground": "#a58cec40",
   "peekViewResult.background": "#0e4956",
   "peekViewTitle.background": "#0e4956",
-  "peekView.border": "#e3b230",
+  "peekView.border": "#0096f5",
 
   // Title Bar colors
   "titleBar.activeBackground": "#0e4956",
@@ -112,7 +109,7 @@
   "statusBar.background": "#0e4956",
   "statusBar.debuggingBackground": "#0e4956",
   "statusBar.noFolderBackground": "#0e4956",
-  "statusBarItem.remoteBackground": "#e3b230",
+  "statusBarItem.remoteBackground": "#0096f5",
   "statusBarItem.prominentBackground": "#053d48",
   "statusBarItem.prominentHoverBackground": "#275b6999",
 
@@ -126,7 +123,7 @@
   "pickerGroup.foreground": "#39c7b999",
 
   // Extensions
-  "extensionButton.prominentBackground": "#e3b230",
+  "extensionButton.prominentBackground": "#0096f5",
   "extensionButton.prominentHoverBackground": "#f38649AA",
 
   // Integrated Terminal colors
