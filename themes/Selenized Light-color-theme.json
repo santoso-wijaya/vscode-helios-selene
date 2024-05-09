@@ -18,7 +18,7 @@
   // Base colors
   "foreground": "#384c52",
   "disabledForeground": "#8f9894",
-  "focusBorder": "#009c8f99",
+  "focusBorder": "#c75d2099",
   "selection.background": "#d6cbb4",
 
   // Button control
@@ -33,7 +33,7 @@
   "input.border": "#8f98944A",
   "input.foreground": "#52666d",
   "input.placeholderForeground": "#8f9894",
-  "inputOption.activeBorder": "#009c8f99",
+  "inputOption.activeBorder": "#c75d2099",
 
   // Badge
   "badge.background": "#b38800AA",
@@ -60,7 +60,7 @@
 
   // Editor Groups & Tabs
   "editorGroup.border": "#52666d",
-  "editorGroup.dropBackground": "#009c8fAA",
+  "editorGroup.dropBackground": "#c75d20AA",
   "editorGroupHeader.tabsBackground": "#d6cbb4",
   "tab.border": "#8f9894",
   "tab.activeBackground": "#fef3da",
@@ -119,8 +119,8 @@
   "debugExceptionWidget.border": "#d4212b",
 
   // Quick picker colors
-  "pickerGroup.border": "#009c8f99",
-  "pickerGroup.foreground": "#009c8f99",
+  "pickerGroup.border": "#c75d2099",
+  "pickerGroup.foreground": "#c75d2099",
 
   // Extensions
   "extensionButton.prominentBackground": "#b38800",

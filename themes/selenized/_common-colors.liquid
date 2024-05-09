@@ -5,14 +5,17 @@
 
 {%- if type == "dark" -%}
   {% assign interactive_color = blue -%}
+  {% assign border_color = cyan -%}
 {% else -%}
   {% assign interactive_color = yellow -%}
+  {% assign border_color = orange -%}
 {% endif -%}
+
 {
   // Base colors
   "foreground": "#{{ fg_1 }}",
   "disabledForeground": "#{{ dim_0 }}",
-  "focusBorder": "#{{ cyan }}99",
+  "focusBorder": "#{{ border_color }}99",
   "selection.background": "#{{ bg_2 }}",
 
   // Button control
@@ -27,7 +30,7 @@
   "input.border": "#{{ dim_0 }}4A",
   "input.foreground": "#{{ fg_0 }}",
   "input.placeholderForeground": "#{{ dim_0 }}",
-  "inputOption.activeBorder": "#{{ cyan }}99",
+  "inputOption.activeBorder": "#{{ border_color }}99",
 
   // Badge
   "badge.background": "#{{ interactive_color }}AA",
@@ -54,7 +57,7 @@
 
   // Editor Groups & Tabs
   "editorGroup.border": "#{{ fg_0 }}",
-  "editorGroup.dropBackground": "#{{ cyan }}AA",
+  "editorGroup.dropBackground": "#{{ border_color }}AA",
   "editorGroupHeader.tabsBackground": "#{{ bg_2 }}",
   "tab.border": "#{{ dim_0 }}",
   "tab.activeBackground": "#{{ bg_0 }}",
@@ -113,8 +116,8 @@
   "debugExceptionWidget.border": "#{{ red }}",
 
   // Quick picker colors
-  "pickerGroup.border": "#{{ cyan }}99",
-  "pickerGroup.foreground": "#{{ cyan }}99",
+  "pickerGroup.border": "#{{ border_color }}99",
+  "pickerGroup.foreground": "#{{ border_color }}99",
 
   // Extensions
   "extensionButton.prominentBackground": "#{{ interactive_color }}",
