@@ -1,0 +1,82 @@
+name: Selenized dark
+colors:
+  - name: bg_0
+    lab:
+      l: 23.0
+      a: -12.0
+      b: -12.0
+  - name: bg_1
+    lab:
+      l: 28.0
+      a: -13.0
+      b: -13.0
+  - name: bg_2
+    lab:
+      l: 36.0
+      a: -13.0
+      b: -13.0
+  - name: dim_0
+    lab:
+      l: 56.0
+      a: -8.0
+      b: -6.0
+  - name: fg_0
+    lab:
+      l: 75.0
+      a: -5.0
+      b: -2.0
+  - name: fg_1
+    lab:
+      l: 85.0
+      a: -5.0
+      b: -2.0
+  - name: "*"
+    lab:
+      l: 91.0
+      a: 0.0
+      b: 13.0
+  - name: "*"
+    lab:
+      l: 96.0
+      a: 0.0
+      b: 13.0
+  - name: red
+    lab:
+      l: 60.0
+      a: 63.0
+      b: 40.0
+  - name: orange
+    lab:
+      l: 67.0
+      a: 37.0
+      b: 50.0
+  - name: magenta
+    lab:
+      l: 66.0
+      a: 55.0
+      b: -15.0
+  - name: green
+    lab:
+      l: 69.0
+      a: -38.0
+      b: 55.0
+  - name: cyan
+    lab:
+      l: 73.0
+      a: -40.0
+      b: -4.0
+  - name: blue
+    lab:
+      l: 60.0
+      a: 0.0
+      b: -57.0
+  - name: yellow
+    lab:
+      l: 75.0
+      a: 6.0
+      b: 68.0
+  - name: violet
+    lab:
+      l: 64.0
+      a: 30.0
+      b: -45.0

@@ -1,0 +1,179 @@
+name: Solarized dark
+colors:
+- base:
+    name: base03
+    lab:
+      l: 15.0
+      a: -12.0
+      b: -12.0
+  srgb:
+    red: 0
+    green: 43
+    blue: 54
+  srgb_hex: 002b36
+- base:
+    name: base02
+    lab:
+      l: 20.0
+      a: -12.0
+      b: -12.0
+  srgb:
+    red: 0
+    green: 54
+    blue: 65
+  srgb_hex: '003641'
+- base:
+    name: base01
+    lab:
+      l: 45.0
+      a: -7.0
+      b: -7.0
+  srgb:
+    red: 86
+    green: 110
+    blue: 118
+  srgb_hex: '566e76'
+- base:
+    name: base00
+    lab:
+      l: 50.0
+      a: -7.0
+      b: -7.0
+  srgb:
+    red: 99
+    green: 123
+    blue: 130
+  srgb_hex: 637b82
+- base:
+    name: base0
+    lab:
+      l: 60.0
+      a: -6.0
+      b: -3.0
+  srgb:
+    red: 130
+    green: 148
+    blue: 150
+  srgb_hex: '829496'
+- base:
+    name: base1
+    lab:
+      l: 65.0
+      a: -5.0
+      b: -2.0
+  srgb:
+    red: 146
+    green: 161
+    blue: 161
+  srgb_hex: 92a1a1
+- base:
+    name: base2
+    lab:
+      l: 92.0
+      a: 0.0
+      b: 10.0
+  srgb:
+    red: 240
+    green: 231
+    blue: 213
+  srgb_hex: f0e7d5
+- base:
+    name: base3
+    lab:
+      l: 97.0
+      a: 0.0
+      b: 10.0
+  srgb:
+    red: 255
+    green: 246
+    blue: 227
+  srgb_hex: fff6e3
+- base:
+    name: red
+    lab:
+      l: 50.0
+      a: 65.0
+      b: 45.0
+  srgb:
+    red: 224
+    green: 51
+    blue: 46
+  srgb_hex: e0332e
+- base:
+    name: orange
+    lab:
+      l: 50.0
+      a: 50.0
+      b: 55.0
+  srgb:
+    red: 207
+    green: 75
+    blue: 21
+  srgb_hex: cf4b15
+- base:
+    name: magenta
+    lab:
+      l: 60.0
+      a: 65.0
+      b: -5.0
+  srgb:
+    red: 242
+    green: 87
+    blue: 156
+  srgb_hex: f2579c
+- base:
+    name: green
+    lab:
+      l: 60.0
+      a: -20.0
+      b: 65.0
+  srgb:
+    red: 141
+    green: 152
+    blue: 0
+  srgb_hex: 8d9800
+- base:
+    name: cyan
+    lab:
+      l: 60.0
+      a: -35.0
+      b: -5.0
+  srgb:
+    red: 31
+    green: 161
+    blue: 152
+  srgb_hex: 1fa198
+- base:
+    name: blue
+    lab:
+      l: 55.0
+      a: -10.0
+      b: -45.0
+  srgb:
+    red: 0
+    green: 141
+    blue: 209
+  srgb_hex: 008dd1
+- base:
+    name: yellow
+    lab:
+      l: 60.0
+      a: 10.0
+      b: 65.0
+  srgb:
+    red: 187
+    green: 136
+    blue: 1
+  srgb_hex: bb8801
+- base:
+    name: violet
+    lab:
+      l: 50.0
+      a: 15.0
+      b: -45.0
+  srgb:
+    red: 92
+    green: 115
+    blue: 196
+  srgb_hex: 5c73c4
+

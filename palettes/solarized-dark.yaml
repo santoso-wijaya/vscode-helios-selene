@@ -1,0 +1,82 @@
+name: Solarized dark
+colors:
+  - name: base03
+    lab:
+      l: 15.0
+      a: -12.0
+      b: -12.0
+  - name: base02
+    lab:
+      l: 20.0
+      a: -12.0
+      b: -12.0
+  - name: base01
+    lab:
+      l: 45.0
+      a: -7.0
+      b: -7.0
+  - name: base00
+    lab:
+      l: 50.0
+      a: -7.0
+      b: -7.0
+  - name: base0
+    lab:
+      l: 60.0
+      a: -6.0
+      b: -3.0
+  - name: base1
+    lab:
+      l: 65.0
+      a: -5.0
+      b: -2.0
+  - name: base2
+    lab:
+      l: 92.0
+      a: 0.0
+      b: 10.0
+  - name: base3
+    lab:
+      l: 97.0
+      a: 0.0
+      b: 10.0
+  - name: red
+    lab:
+      l: 50.0
+      a: 65.0
+      b: 45.0
+  - name: orange
+    lab:
+      l: 50.0
+      a: 50.0
+      b: 55.0
+  - name: magenta
+    lab:
+      l: 60.0
+      a: 65.0
+      b: -5.0
+  - name: green
+    lab:
+      l: 60.0
+      a: -20.0
+      b: 65.0
+  - name: cyan
+    lab:
+      l: 60.0
+      a: -35.0
+      b: -5.0
+  - name: blue
+    lab:
+      l: 55.0
+      a: -10.0
+      b: -45.0
+  - name: yellow
+    lab:
+      l: 60.0
+      a: 10.0
+      b: 65.0
+  - name: violet
+    lab:
+      l: 50.0
+      a: 15.0
+      b: -45.0

@@ -1,0 +1,179 @@
+name: Selenized light
+colors:
+- base:
+    name: bg_0
+    lab:
+      l: 96.0
+      a: 0.0
+      b: 13.0
+  srgb:
+    red: 254
+    green: 243
+    blue: 218
+  srgb_hex: fef3da
+- base:
+    name: bg_1
+    lab:
+      l: 91.0
+      a: 0.0
+      b: 13.0
+  srgb:
+    red: 240
+    green: 228
+    blue: 204
+  srgb_hex: f0e4cc
+- base:
+    name: bg_2
+    lab:
+      l: 82.0
+      a: 0.0
+      b: 13.0
+  srgb:
+    red: 214
+    green: 203
+    blue: 180
+  srgb_hex: d6cbb4
+- base:
+    name: dim_0
+    lab:
+      l: 62.0
+      a: -4.0
+      b: 1.0
+  srgb:
+    red: 143
+    green: 152
+    blue: 148
+  srgb_hex: 8f9894
+- base:
+    name: fg_0
+    lab:
+      l: 42.0
+      a: -6.0
+      b: -6.0
+  srgb:
+    red: 82
+    green: 102
+    blue: 109
+  srgb_hex: 52666d
+- base:
+    name: fg_1
+    lab:
+      l: 31.0
+      a: -6.0
+      b: -6.0
+  srgb:
+    red: 56
+    green: 76
+    blue: 82
+  srgb_hex: 384c52
+- base:
+    name: '*'
+    lab:
+      l: 28.0
+      a: -13.0
+      b: -13.0
+  srgb:
+    red: 14
+    green: 73
+    blue: 86
+  srgb_hex: '0e4956'
+- base:
+    name: '*'
+    lab:
+      l: 23.0
+      a: -12.0
+      b: -12.0
+  srgb:
+    red: 5
+    green: 61
+    blue: 72
+  srgb_hex: 053d48
+- base:
+    name: red
+    lab:
+      l: 46.0
+      a: 66.0
+      b: 42.0
+  srgb:
+    red: 212
+    green: 33
+    blue: 43
+  srgb_hex: d4212b
+- base:
+    name: orange
+    lab:
+      l: 52.0
+      a: 39.0
+      b: 52.0
+  srgb:
+    red: 199
+    green: 93
+    blue: 32
+  srgb_hex: c75d20
+- base:
+    name: magenta
+    lab:
+      l: 52.0
+      a: 58.0
+      b: -16.0
+  srgb:
+    red: 203
+    green: 76
+    blue: 153
+  srgb_hex: cb4c99
+- base:
+    name: green
+    lab:
+      l: 54.0
+      a: -40.0
+      b: 58.0
+  srgb:
+    red: 83
+    green: 145
+    blue: 0
+  srgb_hex: '539100'
+- base:
+    name: cyan
+    lab:
+      l: 57.0
+      a: -42.0
+      b: -4.0
+  srgb:
+    red: 0
+    green: 156
+    blue: 143
+  srgb_hex: 009c8f
+- base:
+    name: blue
+    lab:
+      l: 46.0
+      a: 0.0
+      b: -60.0
+  srgb:
+    red: 0
+    green: 115
+    blue: 210
+  srgb_hex: 0073d2
+- base:
+    name: yellow
+    lab:
+      l: 59.0
+      a: 6.0
+      b: 71.0
+  srgb:
+    red: 179
+    green: 136
+    blue: 0
+  srgb_hex: b38800
+- base:
+    name: violet
+    lab:
+      l: 49.0
+      a: 32.0
+      b: -47.0
+  srgb:
+    red: 125
+    green: 100
+    blue: 197
+  srgb_hex: 7d64c5
+
