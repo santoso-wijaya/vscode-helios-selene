@@ -10,25 +10,8 @@
 //    > ../vscode-helios-selene/themes/Selenized\ Light-color-theme.json \
 //    ; popd
 
-{%- assign type = "light" %}
-
-{%- render
+{% render
   "_selenized-color-theme.json.liquid",
-    type: type,
-    bg_0: bg_0,
-    bg_1: bg_1,
-    bg_2: bg_2,
-    dim_0: dim_0,
-    fg_0: fg_0,
-    fg_1: fg_1,
-    unused_0: unused_0,
-    unused_1: unused_1,
-    red: red,
-    orange: orange,
-    magenta: magenta,
-    green: green,
-    cyan: cyan,
-    blue: blue,
-    yellow: yellow,
-    violet: violet,
-%}
+    type: "light",
+    colors: palette.colors,
+-%}
