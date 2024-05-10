@@ -1,9 +1,54 @@
 {% comment %}
+  TextMate token scoped highlight colors.
+
   This is used by VSCode as fallback when semantic token colors for a given
   token does not exist.
 
   See: https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-coloring-in-color-themes
-{% endcomment -%}
+
+  Colors are generically assigned using color theme agnostic naming scheme
+  as follows (assuming light mode):
+
+  | base name | alias   | use                                         |
+  | ----------|---------|---------------------------------------------|
+  | base00    | bg_0    | default background                          |
+  | base01    | bg_1    | lighter background                          |
+  | base02    | bg_2    | selection background                        |
+  | base03    | dim_0   | dim foreground (comments, invis chars, etc) |
+  | base04    | fg_0    | lighter foreground                          |
+  | base05    | fg_1    | default foreground                          |
+  | base06    |         | lighter (oft unused)                        |
+  | base07    |         | lightest (oft unused)                       |
+  | base08    | red     |                                             |
+  | base09    | orange  |                                             |
+  | base0a    | magenta |                                             |
+  | base0b    | green   |                                             |
+  | base0c    | cyan    |                                             |
+  | base0d    | blue    |                                             |
+  | base0e    | yellow  |                                             |
+  | base0f    | violet  |                                             |
+
+  Note: Dark mode use the same base color naming scheme, with the lighter/darker
+  semantics reversed.
+
+  When this template is rendered as a partial (i.e. `{% render %}`), it assumes
+  that the above base names are injected as variables. But the alias names are
+  used throughout this file to make it more readable.
+{% endcomment %}
+{%- assign bg_0 =     base00 %}
+{%- assign bg_1 =     base01 %}
+{%- assign bg_2 =     base02 %}
+{%- assign dim_0 =    base03 %}
+{%- assign fg_0 =     base04 %}
+{%- assign fg_1 =     base05 %}
+{%- assign red =      base08 %}
+{%- assign orange =   base09 %}
+{%- assign magenta =  base0a %}
+{%- assign green =    base0b %}
+{%- assign cyan =     base0c %}
+{%- assign blue =     base0d %}
+{%- assign yellow =   base0e %}
+{%- assign violet =   base0f %}
 [
   {
     "name": "Comments",
@@ -13,7 +58,7 @@
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#AAAAAA"
+      "foreground": "#{{ dim_0 }}"
     }
   },
   {
@@ -21,7 +66,7 @@
     "scope": "comment.block.preprocessor",
     "settings": {
       "fontStyle": "",
-      "foreground": "#AAAAAA"
+      "foreground": "#{{ dim_0 }}"
     }
   },
   {
@@ -31,41 +76,31 @@
       "comment.block.documentation"
     ],
     "settings": {
-      "foreground": "#448C27"
+      "foreground": "#{{ green }}"
     }
   },
   {
     "name": "Invalid - Illegal",
     "scope": "invalid.illegal",
     "settings": {
-      "foreground": "#660000"
+      "foreground": "#{{ red }}"
     }
   },
   {
     "name": "Operators",
     "scope": "keyword.operator",
     "settings": {
-      "foreground": "#777777"
+      "foreground": "#{{ fg_0 }}"
     }
   },
   {
     "name": "Keywords",
     "scope": [
-      "keyword",
-      "storage"
+      "keyword.control",
+      "keyword.other"
     ],
     "settings": {
-      "foreground": "#4B83CD"
-    }
-  },
-  {
-    "name": "Types",
-    "scope": [
-      "storage.type",
-      "support.type"
-    ],
-    "settings": {
-      "foreground": "#7A3E9D"
+      "foreground": "#{{ green }}"
     }
   },
   {
@@ -76,47 +111,71 @@
       "variable.language"
     ],
     "settings": {
-      "foreground": "#AB6526"
+      "foreground": "#{{ orange }}"
     }
   },
   {
     "name": "Variables",
     "scope": [
       "variable",
+      "variable.parameter",
       "support.variable"
     ],
     "settings": {
-      "foreground": "#7A3E9D"
+      "foreground": "#{{ fg_0 }}"
     }
   },
   {
     "name": "Functions",
     "scope": [
       "entity.name.function",
+      "entity.name.function.declaration",
       "support.function"
     ],
     "settings": {
-      "fontStyle": "bold",
-      "foreground": "#AA3731"
+      "foreground": "#{{ blue }}"
     }
   },
   {
-    "name": "Classes",
+    "name": "Types and Type Modifiers",
     "scope": [
       "entity.name.type",
       "entity.other.inherited-class",
-      "support.class"
+      "support.class",
+      "support.type",
+      "storage.type",
+      "storage"
     ],
     "settings": {
-      "fontStyle": "bold",
-      "foreground": "#7A3E9D"
+      "foreground": "#{{ yellow }}"
+    }
+  },
+  {
+    "name": "Defined Class Name",
+    "scope": [
+      "entity.name.class",
+      "entity.name.type.class"
+    ],
+    "settings": {
+      "foreground": "#{{ blue }}"
+    }
+  },
+  {
+    "name": "Imports",
+    "scope": [
+      "keyword.control.import",
+      "keyword.control.directive.include",
+      "keyword.other.import"
+    ],
+    "settings": {
+      "foreground": "#{{ orange }}"
     }
   },
   {
     "name": "Exceptions",
     "scope": "entity.name.exception",
     "settings": {
-      "foreground": "#660000"
+      "foreground": "#{{ red }}"
     }
   },
   {
@@ -129,47 +188,64 @@
   {
     "name": "Numbers, Characters",
     "scope": [
+      "constant.language",
       "constant.numeric",
       "constant.character",
-      "constant"
+      "constant",
+      "variable.other.constant"
     ],
     "settings": {
-      "foreground": "#AB6526"
+      "foreground": "#{{ cyan }}"
     }
   },
   {
     "name": "Strings",
     "scope": "string",
     "settings": {
-      "foreground": "#448C27"
+      "foreground": "#{{ cyan }}"
     }
   },
   {
     "name": "Strings: Escape Sequences",
     "scope": "constant.character.escape",
     "settings": {
-      "foreground": "#777777"
+      "foreground": "#{{ fg_0 }}"
     }
   },
   {
     "name": "Strings: Regular Expressions",
     "scope": "string.regexp",
     "settings": {
-      "foreground": "#4B83CD"
+      "foreground": "#{{ blue }}"
+    }
+  },
+  {
+    "name": "Strings: Interpolation and Escaping",
+    "scope": [
+      "string.constant.character.escape",
+      "string.interpolated.dollar.shell",
+      "string.interpolated.backtick.shell",
+      "constant.character.format",
+      "constant.character.escape",
+      "punctuation.section.embedded",
+      "punctuation.definition.template-expression"
+    ],
+    "settings": {
+      "foreground": "#{{ magenta }}"
     }
   },
   {
     "name": "Strings: Symbols",
     "scope": "constant.other.symbol",
     "settings": {
-      "foreground": "#AB6526"
+      "foreground": "#{{ orange }}"
     }
   },
   {
     "name": "Punctuation",
     "scope": "punctuation",
     "settings": {
-      "foreground": "#777777"
+      "foreground": "#{{ fg_0 }}"
     }
   },
   {
@@ -181,7 +257,7 @@
       "meta.tag.sgml punctuation.definition.tag.html"
     ],
     "settings": {
-      "foreground": "#AAAAAA"
+      "foreground": "#{{ fg_0 }}"
     }
   },
   {
@@ -193,14 +269,14 @@
       "punctuation.definition.tag.end.html"
     ],
     "settings": {
-      "foreground": "#91B3E0"
+      "foreground": "#{{ blue }}"
     }
   },
   {
     "name": "HTML: Tag Names",
     "scope": "entity.name.tag",
     "settings": {
-      "foreground": "#4B83CD"
+      "foreground": "#{{ cyan }}"
     }
   },
   {
@@ -211,7 +287,7 @@
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#91B3E0"
+      "foreground": "#{{ blue }}"
     }
   },
   {
@@ -221,7 +297,7 @@
       "punctuation.definition.entity"
     ],
     "settings": {
-      "foreground": "#AB6526"
+      "foreground": "#{{ orange }}"
     }
   },
   {
@@ -233,7 +309,7 @@
       "entity.name.tag.css"
     ],
     "settings": {
-      "foreground": "#7A3E9D"
+      "foreground": "#{{ violet }}"
     }
   },
   {
@@ -243,7 +319,7 @@
       "support.type.property-name"
     ],
     "settings": {
-      "foreground": "#AB6526"
+      "foreground": "#{{ yellow }}"
     }
   },
   {
@@ -254,7 +330,7 @@
       "support.constant.property-value"
     ],
     "settings": {
-      "foreground": "#448C27"
+      "foreground": "#{{ green }}"
     }
   },
   {
@@ -268,14 +344,14 @@
     "name": "Markup: Changed",
     "scope": "markup.changed",
     "settings": {
-      "foreground": "#000000"
+      "foreground": "#{{ fg_1 }}"
     }
   },
   {
     "name": "Markup: Deletion",
     "scope": "markup.deleted",
     "settings": {
-      "foreground": "#000000"
+      "foreground": "#{{ fg_1 }}"
     }
   },
   {
@@ -289,21 +365,21 @@
     "name": "Markup: Error",
     "scope": "markup.error",
     "settings": {
-      "foreground": "#660000"
+      "foreground": "#{{ red }}"
     }
   },
   {
     "name": "Markup: Insertion",
     "scope": "markup.inserted",
     "settings": {
-      "foreground": "#000000"
+      "foreground": "#{{ fg_1 }}"
     }
   },
   {
     "name": "Markup: Link",
     "scope": "meta.link",
     "settings": {
-      "foreground": "#4B83CD"
+      "foreground": "#{{ blue }}"
     }
   },
   {
@@ -313,21 +389,21 @@
       "markup.raw"
     ],
     "settings": {
-      "foreground": "#777777"
+      "foreground": "#{{ fg_0 }}"
     }
   },
   {
     "name": "Markup: Prompt",
     "scope": "markup.prompt",
     "settings": {
-      "foreground": "#777777"
+      "foreground": "#{{ fg_0 }}"
     }
   },
   {
     "name": "Markup: Heading",
     "scope": "markup.heading",
     "settings": {
-      "foreground": "#AA3731"
+      "foreground": "#{{ orange }}"
     }
   },
   {
@@ -341,7 +417,7 @@
     "name": "Markup: Traceback",
     "scope": "markup.traceback",
     "settings": {
-      "foreground": "#660000"
+      "foreground": "#{{ magenta }}"
     }
   },
   {
@@ -355,14 +431,14 @@
     "name": "Markup Quote",
     "scope": "markup.quote",
     "settings": {
-      "foreground": "#7A3E9D"
+      "foreground": "#{{ violet }}"
     }
   },
   {
     "name": "Markup Lists",
     "scope": "markup.list",
     "settings": {
-      "foreground": "#4B83CD"
+      "foreground": "#{{ blue }}"
     }
   },
   {
@@ -372,7 +448,7 @@
       "markup.italic"
     ],
     "settings": {
-      "foreground": "#448C27"
+      "foreground": "#{{ green }}"
     }
   },
   {
@@ -380,7 +456,7 @@
     "scope": "markup.inline.raw",
     "settings": {
       "fontStyle": "",
-      "foreground": "#AB6526"
+      "foreground": "#{{ orange }}"
     }
   },
   {
@@ -391,21 +467,21 @@
       "meta.separator"
     ],
     "settings": {
-      "foreground": "#434343"
+      "foreground": "#{{ fg_0 }}"
     }
   },
   {
     "name": "Extra: Diff From",
     "scope": "meta.diff.header.from-file",
     "settings": {
-      "foreground": "#434343"
+      "foreground": "#{{ fg_0 }}"
     }
   },
   {
     "name": "Extra: Diff To",
     "scope": "meta.diff.header.to-file",
     "settings": {
-      "foreground": "#434343"
+      "foreground": "#{{ fg_0 }}"
     }
   }
 ]
