@@ -124,17 +124,17 @@
 	"editor.selectionBackground": "#{{ bg_1 }}",
 	"editorCursor.background": "#{{ bg_1 }}",
 	"editorCursor.foreground": "#{%- if type == "dark" %}{{ blue }}{% else %}{{ orange }}{% endif -%}",
-	"editorIndentGuide.background1": "#{{ fg_0 }}80",
-	"editorIndentGuide.activeBackground1": "#{{ fg_1 }}80",
+	"editorIndentGuide.background": "#{{ fg_0 }}80",
+	"editorIndentGuide.activeBackground": "#{{ active_color }}80",
 	"editorLineNumber.activeForeground": "#{{ fg_0 }}",
 	"editorLineNumber.foreground": "#{{ dim_0 }}",
-	"editorStickyScroll.background": "#{{ bg_1 }}",
-	"editorStickyScrollHover.background": "#{{ dim_0 }}30",
-	"editorWhitespace.foreground": "#{{ fg_0 }}80",
+	"editorWhitespace.foreground": "#{{ dim_0 }}AA",
 
 	// Editor widget colors
 	"editorWidget.background": "#{{ bg_1 }}",
 	"editorHoverWidget.background": "#{{ bg_2 }}",
+	"editorStickyScroll.background": "#{{ bg_1 }}",
+	"editorStickyScrollHover.background": "#{{ dim_0 }}30",
 
 	// Notebook colors
 	"notebook.editorBackground": "#{{ bg_0 }}",
@@ -178,7 +178,7 @@
 	// Integrated Terminal colors
 	"terminal.background": "#{{ bg_0 }}",
 	"terminal.foreground": "#{{ fg_1 }}",
-	"terminal.selectionBackground": "#{{ bg_2 }}",
+	"terminal.selectionBackground": "#{{ bg_1 }}",
 	"terminalCursor.background": "#{{ bg_1 }}",
 	"terminalCursor.foreground": "#{{ fg_0 }}",
 	"terminal.ansiBlack": "#{{ bg_1 }}",

@@ -79,17 +79,17 @@
 	"editor.selectionBackground": "#f0e4cc",
 	"editorCursor.background": "#f0e4cc",
 	"editorCursor.foreground": "#c75d20",
-	"editorIndentGuide.background1": "#52666d80",
-	"editorIndentGuide.activeBackground1": "#384c5280",
+	"editorIndentGuide.background": "#52666d80",
+	"editorIndentGuide.activeBackground": "#b3880080",
 	"editorLineNumber.activeForeground": "#52666d",
 	"editorLineNumber.foreground": "#8f9894",
-	"editorStickyScroll.background": "#f0e4cc",
-	"editorStickyScrollHover.background": "#8f989430",
-	"editorWhitespace.foreground": "#52666d80",
+	"editorWhitespace.foreground": "#8f9894AA",
 
 	// Editor widget colors
 	"editorWidget.background": "#f0e4cc",
 	"editorHoverWidget.background": "#d6cbb4",
+	"editorStickyScroll.background": "#f0e4cc",
+	"editorStickyScrollHover.background": "#8f989430",
 
 	// Notebook colors
 	"notebook.editorBackground": "#fef3da",
@@ -133,7 +133,7 @@
 	// Integrated Terminal colors
 	"terminal.background": "#fef3da",
 	"terminal.foreground": "#384c52",
-	"terminal.selectionBackground": "#d6cbb4",
+	"terminal.selectionBackground": "#f0e4cc",
 	"terminalCursor.background": "#f0e4cc",
 	"terminalCursor.foreground": "#52666d",
 	"terminal.ansiBlack": "#f0e4cc",
