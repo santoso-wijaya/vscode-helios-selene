@@ -1,7 +1,56 @@
 {% comment %}
   This is for theming the Workbench (UI).
   See: https://code.visualstudio.com/api/references/theme-color
-{% endcomment -%}
+
+  Colors are generically assigned using color theme agnostic naming scheme
+  as follows (assuming light mode):
+
+  | base name | alias   | use                                         |
+  | ----------|---------|---------------------------------------------|
+  | base00    | bg_0    | default background                          |
+  | base01    | bg_1    | lighter background                          |
+  | base02    | bg_2    | selection background                        |
+  | base03    | dim_0   | dim foreground (comments, invis chars, etc) |
+  | base04    | fg_0    | lighter foreground                          |
+  | base05    | fg_1    | default foreground                          |
+  | base06    |         | lighter (oft unused)                        |
+  | base07    |         | lightest (oft unused)                       |
+  | base08    | red     |                                             |
+  | base09    | orange  |                                             |
+  | base0a    | magenta |                                             |
+  | base0b    | green   |                                             |
+  | base0c    | cyan    |                                             |
+  | base0d    | blue    |                                             |
+  | base0e    | yellow  |                                             |
+  | base0f    | violet  |                                             |
+
+  Note: Dark mode use the same base color naming scheme, with the lighter/darker
+  semantics reversed.
+
+  When this template is rendered as a partial (i.e. `{% render %}`), it assumes
+  that the above base names are injected as variables. But the alias names are
+  used throughout this file to make it more readable.
+
+  Also assume injection of the following variables:
+
+  | variable | values          |
+  |----------|-----------------|
+  | type     | "dark", "light" |
+{% endcomment %}
+{%- assign bg_0 =     base00 %}
+{%- assign bg_1 =     base01 %}
+{%- assign bg_2 =     base02 %}
+{%- assign dim_0 =    base03 %}
+{%- assign fg_0 =     base04 %}
+{%- assign fg_1 =     base05 %}
+{%- assign red =      base08 %}
+{%- assign orange =   base09 %}
+{%- assign magenta =  base0a %}
+{%- assign green =    base0b %}
+{%- assign cyan =     base0c %}
+{%- assign blue =     base0d %}
+{%- assign yellow =   base0e %}
+{%- assign violet =   base0f %}
 
 {%- if type == "dark" -%}
   {% assign interactive_color = blue -%}
