@@ -24,6 +24,11 @@
       }
     ]
   },
+  "icon": "assets/solarized-yinyang.png",
+  "galleryBanner": {
+    "color": "#fbf3db",
+    "theme": "light"
+  },
   "keywords": [
     "solarized",
     "solarized dark",
