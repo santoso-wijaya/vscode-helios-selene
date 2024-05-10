@@ -13,13 +13,13 @@ cargo run -p base16cs-cli -- \
   -d ${CWD}/themes/common \
   -d ${CWD}/themes/selenized \
   -t ${CWD}/themes/selenized/light-color-theme.json.liquid \
-  > ${CWD}/themes/Selenized\ Light-color-theme.json
+  > ${CWD}/themes/Selenized_Light-color-theme.json
 
 cargo run -p base16cs-cli -- \
   --palette ${CWD}/palettes/selenized-dark.yaml \
   -d ${CWD}/themes/common \
   -d ${CWD}/themes/selenized \
   -t ${CWD}/themes/selenized/dark-color-theme.json.liquid \
-  > ${CWD}/themes/Selenized\ Dark-color-theme.json
+  > ${CWD}/themes/Selenized_Dark-color-theme.json
 
 popd

@@ -15,12 +15,12 @@
       {
         "label": "Selenized Light",
         "uiTheme": "vs",
-        "path": "./themes/Selenized Light-color-theme.json"
+        "path": "./themes/Selenized_Light-color-theme.json"
       },
       {
         "label": "Selenized Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Selenized Dark-color-theme.json"
+        "path": "./themes/Selenized_Dark-color-theme.json"
       }
     ]
   },
