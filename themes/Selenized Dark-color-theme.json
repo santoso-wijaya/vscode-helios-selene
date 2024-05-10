@@ -128,12 +128,12 @@
   "extensionButton.prominentHoverBackground": "#f38649AA",
 
   // Integrated Terminal colors
-  "terminal.background": "#0e4956",
+  "terminal.background": "#053d48",
   "terminal.foreground": "#c8d7d8",
   "terminal.selectionBackground": "#275b69",
   "terminalCursor.background": "#0e4956",
   "terminalCursor.foreground": "#adbcbc",
-  "terminal.ansiBlack": "#053d48",
+  "terminal.ansiBlack": "#0e4956",
   "terminal.ansiRed": "#fd564e",
   "terminal.ansiGreen": "#80b83c",
   "terminal.ansiYellow": "#e3b230",
@@ -141,7 +141,7 @@
   "terminal.ansiMagenta": "#f176bd",
   "terminal.ansiCyan": "#39c7b9",
   "terminal.ansiWhite": "#adbcbc",
-  "terminal.ansiBrightBlack": "#0e4956",
+  "terminal.ansiBrightBlack": "#053d48",
   "terminal.ansiBrightRed": "#f38649",
   "terminal.ansiBrightGreen": "#80b83c",
   "terminal.ansiBrightYellow": "#e3b230",
@@ -601,6 +601,7 @@
 ,
 
   // Semantic token (LSP-provided) colors
+  // TODO
   "semanticHighlighting": true,
   "semanticTokenColors": {
   // TODO
