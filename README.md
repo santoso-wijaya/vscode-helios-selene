@@ -13,7 +13,9 @@ This extension contains the following color themes and variants:
 
 ### Workbench (UI)
 
-TODO
+[Selenized Light screenshot](assets/screenshot-workbench-selenized-light.png)
+
+[Selenized Dark screenshot](assets/screenshot-workbench-selenized-light.png)
 
 ### Editor
 
