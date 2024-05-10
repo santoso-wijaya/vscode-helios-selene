@@ -30,12 +30,12 @@ colors:
       l: 85.0
       a: -5.0
       b: -2.0
-  - name: "*"
+  - name: "unused_0"
     lab:
       l: 91.0
       a: 0.0
       b: 13.0
-  - name: "*"
+  - name: "unused_1"
     lab:
       l: 96.0
       a: 0.0

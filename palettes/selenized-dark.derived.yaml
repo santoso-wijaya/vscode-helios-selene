@@ -67,7 +67,7 @@ colors:
     blue: 216
   srgb_hex: c8d7d8
 - base:
-    name: '*'
+    name: unused_0
     lab:
       l: 91.0
       a: 0.0
@@ -78,7 +78,7 @@ colors:
     blue: 204
   srgb_hex: f0e4cc
 - base:
-    name: '*'
+    name: unused_1
     lab:
       l: 96.0
       a: 0.0
