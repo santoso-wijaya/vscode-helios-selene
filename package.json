@@ -3,6 +3,7 @@
   "displayName": "Solarized & Selenized",
   "description": "A Solarized and Selenized themes combo for Visual Studio Code",
   "version": "0.1.0",
+  "publisher": "santoso-wijaya",
   "engines": {
     "vscode": "^1.89.0"
   },
