@@ -1,41 +1,41 @@
 {% comment %}
-  This is for theming the Workbench (UI).
-  See: https://code.visualstudio.com/api/references/theme-color
+	This is for theming the Workbench (UI).
+	See: https://code.visualstudio.com/api/references/theme-color
 
-  Colors are generically assigned using color theme agnostic naming scheme
-  as follows (assuming light mode):
+	Colors are generically assigned using color theme agnostic naming scheme
+	as follows (assuming light mode):
 
-  | base name | alias   | use                                         |
-  | ----------|---------|---------------------------------------------|
-  | base00    | bg_0    | default background                          |
-  | base01    | bg_1    | lighter background                          |
-  | base02    | bg_2    | selection background                        |
-  | base03    | dim_0   | dim foreground (comments, invis chars, etc) |
-  | base04    | fg_0    | lighter foreground                          |
-  | base05    | fg_1    | default foreground                          |
-  | base06    |         | lighter (oft unused)                        |
-  | base07    |         | lightest (oft unused)                       |
-  | base08    | red     |                                             |
-  | base09    | orange  |                                             |
-  | base0a    | magenta |                                             |
-  | base0b    | green   |                                             |
-  | base0c    | cyan    |                                             |
-  | base0d    | blue    |                                             |
-  | base0e    | yellow  |                                             |
-  | base0f    | violet  |                                             |
+	| base name | alias   | use                                         |
+	| ----------|---------|---------------------------------------------|
+	| base00    | bg_0    | default background                          |
+	| base01    | bg_1    | lighter background                          |
+	| base02    | bg_2    | selection background                        |
+	| base03    | dim_0   | dim foreground (comments, invis chars, etc) |
+	| base04    | fg_0    | lighter foreground                          |
+	| base05    | fg_1    | default foreground                          |
+	| base06    |         | lighter (oft unused)                        |
+	| base07    |         | lightest (oft unused)                       |
+	| base08    | red     |                                             |
+	| base09    | orange  |                                             |
+	| base0a    | magenta |                                             |
+	| base0b    | green   |                                             |
+	| base0c    | cyan    |                                             |
+	| base0d    | blue    |                                             |
+	| base0e    | yellow  |                                             |
+	| base0f    | violet  |                                             |
 
-  Note: Dark mode use the same base color naming scheme, with the lighter/darker
-  semantics reversed.
+	Note: Dark mode use the same base color naming scheme, with the lighter/darker
+	semantics reversed.
 
-  When this template is rendered as a partial (i.e. `{% render %}`), it assumes
-  that the above base names are injected as variables. But the alias names are
-  used throughout this file to make it more readable.
+	When this template is rendered as a partial (i.e. `{% render %}`), it assumes
+	that the above base names are injected as variables. But the alias names are
+	used throughout this file to make it more readable.
 
-  Also assume injection of the following variables:
+	Also assume injection of the following variables:
 
-  | variable | values          |
-  |----------|-----------------|
-  | type     | "dark", "light" |
+	| variable | values          |
+	|----------|-----------------|
+	| type     | "dark", "light" |
 {% endcomment %}
 {%- assign bg_0 =     base00 %}
 {%- assign bg_1 =     base01 %}
@@ -53,154 +53,157 @@
 {%- assign violet =   base0f %}
 
 {%- if type == "dark" -%}
-  {% assign interactive_color = blue -%}
-  {% assign border_color = cyan -%}
+	{% assign active_color = blue -%}
+	{% assign border_color = cyan -%}
 {% else -%}
-  {% assign interactive_color = yellow -%}
-  {% assign border_color = orange -%}
+	{% assign active_color = yellow -%}
+	{% assign border_color = orange -%}
 {% endif -%}
 
 {
-  // Base colors
-  "foreground": "#{{ fg_1 }}",
-  "disabledForeground": "#{{ dim_0 }}",
-  "focusBorder": "#{{ border_color }}99",
-  "selection.background": "#{{ bg_2 }}",
+	// Base colors
+	"foreground": "#{{ fg_1 }}",
+	"disabledForeground": "#{{ dim_0 }}",
+	"focusBorder": "#{{ border_color }}99",
+	"selection.background": "#{{ bg_2 }}",
 
-  // Button control
-  "button.background": "#{{ interactive_color }}",
+	// Button control
+	"button.background": "#{{ active_color }}",
 
-  // Dropdown control
-  "dropdown.background": "#{{ bg_1 }}",
-  "dropdown.border": "#{{ orange }}",
+	// Dropdown control
+	"dropdown.background": "#{{ bg_1 }}",
+	"dropdown.border": "#{{ orange }}",
 
-  // Input control
-  "input.background": "#{{ bg_2 }}",
-  "input.border": "#{{ dim_0 }}4A",
-  "input.foreground": "#{{ fg_0 }}",
-  "input.placeholderForeground": "#{{ dim_0 }}",
-  "inputOption.activeBorder": "#{{ border_color }}99",
+	// Input control
+	"input.background": "#{{ bg_2 }}",
+	"input.border": "#{{ dim_0 }}4A",
+	"input.foreground": "#{{ fg_0 }}",
+	"input.placeholderForeground": "#{{ dim_0 }}",
+	"inputOption.activeBorder": "#{{ border_color }}99",
 
-  // Badge
-  "badge.background": "#{{ interactive_color }}AA",
+	// Badge
+	"badge.background": "#{{ active_color }}AA",
 
-  // Progress bar
-  "progressBar.background": "#{{ interactive_color }}",
+	// Progress bar
+	"progressBar.background": "#{{ active_color }}",
 
-  // Lists and trees
-  "list.activeSelectionBackground": "#{{ interactive_color }}88",
-  "list.inactiveSelectionBackground": "#{{ bg_2 }}",
-  "list.focusBackground": "#{{ interactive_color }}66",
-  "list.hoverBackground": "#{{ interactive_color }}44",
-  "list.highlightForeground": "#{{ interactive_color }}",
+	// Lists and trees
+	"list.activeSelectionBackground": "#{{ active_color }}88",
+	"list.inactiveSelectionBackground": "#{{ bg_2 }}",
+	"list.focusBackground": "#{{ active_color }}66",
+	"list.hoverBackground": "#{{ active_color }}44",
+	"list.highlightForeground": "#{{ active_color }}",
 
-  // Activity Bar
-  "activityBar.background": "#{{ bg_2 }}",
-  "activityBar.foreground": "#{{ fg_1 }}",
-  "activityBarBadge.background": "#{{ interactive_color }}AA",
+	// Activity Bar
+	"activityBar.background": "#{{ bg_2 }}",
+	"activityBar.foreground": "#{{ fg_1 }}",
+	"activityBarBadge.background": "#{{ active_color }}AA",
 
-  // Side Bar
-  "sideBar.background": "#{{ bg_1 }}",
-  "sideBar.foreground": "#{{ fg_1 }}",
-  "sideBarTitle.foreground": "#{{ fg_1 }}",
+	// Side Bar
+	"sideBar.background": "#{{ bg_1 }}",
+	"sideBar.foreground": "#{{ fg_1 }}",
+	"sideBarTitle.foreground": "#{{ fg_1 }}",
 
-  // Editor Groups & Tabs
-  "editorGroup.border": "#{{ fg_0 }}",
-  "editorGroup.dropBackground": "#{{ border_color }}AA",
-  "editorGroupHeader.tabsBackground": "#{{ bg_2 }}",
-  "tab.border": "#{{ dim_0 }}",
-  "tab.activeBackground": "#{{ bg_0 }}",
-  "tab.inactiveForeground": "#{{ fg_0 }}",
-  "tab.inactiveBackground": "#{{ bg_2 }}",
-  "tab.activeModifiedBorder": "#{{ orange }}",
+	// Editor Groups & Tabs
+	"editorGroup.border": "#{{ fg_0 }}",
+	"editorGroup.dropBackground": "#{{ border_color }}AA",
+	"editorGroupHeader.tabsBackground": "#{{ bg_2 }}",
+	"editorGroupHeader.tabsBorder": "#{{ bg_2 }}",
+	"editorGroupHeader.border": "#{{ bg_2 }}",
+	"tab.border": "#{{ dim_0 }}",
+	"tab.activeBackground": "#{{ bg_0 }}",
+	"tab.inactiveForeground": "#{{ fg_0 }}",
+	"tab.inactiveBackground": "#{{ bg_2 }}",
+	"tab.activeModifiedBorder": "#{{ active_color }}",
+	"tab.activeBorderTop": "#{{ active_color }}",
 
-  // Editor colors
-  "editor.background": "#{{ bg_0 }}",
-  "editor.foreground": "#{{ fg_1 }}",
-  "editor.lineHighlightBackground": "#{{ bg_1 }}",
-  "editor.selectionBackground": "#{{ bg_1 }}",
-  "editorCursor.background": "#{{ bg_1 }}",
-  "editorCursor.foreground": "#{%- if type == "dark" -%}{{ blue }}{%- else -%}{{ orange }}{%- endif -%}",
-  "editorIndentGuide.background1": "#{{ fg_0 }}80",
-  "editorIndentGuide.activeBackground1": "#{{ fg_1 }}80",
-  "editorLineNumber.activeForeground": "#{{ fg_0 }}",
-  "editorLineNumber.foreground": "#{{ dim_0 }}",
-  "editorStickyScroll.background": "#{{ bg_1 }}",
-  "editorStickyScrollHover.background": "#{{ dim_0 }}30",
-  "editorWhitespace.foreground": "#{{ fg_0 }}80",
+	// Editor colors
+	"editor.background": "#{{ bg_0 }}",
+	"editor.foreground": "#{{ fg_1 }}",
+	"editor.lineHighlightBackground": "#{{ bg_1 }}",
+	"editor.selectionBackground": "#{{ bg_1 }}",
+	"editorCursor.background": "#{{ bg_1 }}",
+	"editorCursor.foreground": "#{%- if type == "dark" %}{{ blue }}{% else %}{{ orange }}{% endif -%}",
+	"editorIndentGuide.background1": "#{{ fg_0 }}80",
+	"editorIndentGuide.activeBackground1": "#{{ fg_1 }}80",
+	"editorLineNumber.activeForeground": "#{{ fg_0 }}",
+	"editorLineNumber.foreground": "#{{ dim_0 }}",
+	"editorStickyScroll.background": "#{{ bg_1 }}",
+	"editorStickyScrollHover.background": "#{{ dim_0 }}30",
+	"editorWhitespace.foreground": "#{{ fg_0 }}80",
 
-  // Editor widget colors
-  "editorWidget.background": "#{{ bg_1 }}",
-  "editorHoverWidget.background": "#{{ bg_2 }}",
+	// Editor widget colors
+	"editorWidget.background": "#{{ bg_1 }}",
+	"editorHoverWidget.background": "#{{ bg_2 }}",
 
-  // Notebook colors
-  "notebook.editorBackground": "#{{ bg_0 }}",
-  "notebook.cellEditorBackground": "#{{ bg_1 }}",
+	// Notebook colors
+	"notebook.editorBackground": "#{{ bg_0 }}",
+	"notebook.cellEditorBackground": "#{{ bg_1 }}",
 
-  // Peek view colors
-  "peekViewEditor.background": "#{{ bg_1 }}",
-  "peekViewEditor.matchHighlightBackground": "#{{ violet }}40",
-  "peekViewResult.background": "#{{ bg_1 }}",
-  "peekViewTitle.background": "#{{ bg_1 }}",
-  "peekView.border": "#{{ interactive_color }}",
+	// Peek view colors
+	"peekViewEditor.background": "#{{ bg_1 }}",
+	"peekViewEditor.matchHighlightBackground": "#{{ violet }}40",
+	"peekViewResult.background": "#{{ bg_1 }}",
+	"peekViewTitle.background": "#{{ bg_1 }}",
+	"peekView.border": "#{{ active_color }}",
 
-  // Title Bar colors
-  "titleBar.activeBackground": "#{{ bg_1 }}",
+	// Title Bar colors
+	"titleBar.activeBackground": "#{{ bg_1 }}",
 
-  // Panel colors
-  "panel.border": "#{{ fg_0 }}",
+	// Panel colors
+	"panel.border": "#{{ fg_0 }}",
 
-  // Status Bar colors
-  "statusBar.foreground": "#{{ fg_1 }}",
-  "statusBar.background": "#{{ bg_1 }}",
-  "statusBar.debuggingBackground": "#{{ bg_1 }}",
-  "statusBar.noFolderBackground": "#{{ bg_1 }}",
-  "statusBarItem.remoteBackground": "#{{ interactive_color }}",
-  "statusBarItem.prominentBackground": "#{{ bg_0 }}",
-  "statusBarItem.prominentHoverBackground": "#{{ bg_2 }}99",
+	// Status Bar colors
+	"statusBar.foreground": "#{{ fg_1 }}",
+	"statusBar.background": "#{{ bg_1 }}",
+	"statusBar.debuggingBackground": "#{{ bg_1 }}",
+	"statusBar.noFolderBackground": "#{{ bg_1 }}",
+	"statusBarItem.remoteBackground": "#{{ active_color }}",
+	"statusBarItem.prominentBackground": "#{{ bg_0 }}",
+	"statusBarItem.prominentHoverBackground": "#{{ bg_2 }}99",
 
-  // Debug colors
-  "debugToolBar.background": "#{{ bg_1 }}",
-  "debugExceptionWidget.background": "#{{ bg_1 }}",
-  "debugExceptionWidget.border": "#{{ red }}",
+	// Debug colors
+	"debugToolBar.background": "#{{ bg_1 }}",
+	"debugExceptionWidget.background": "#{{ bg_1 }}",
+	"debugExceptionWidget.border": "#{{ red }}",
 
-  // Quick picker colors
-  "pickerGroup.border": "#{{ border_color }}99",
-  "pickerGroup.foreground": "#{{ border_color }}99",
+	// Quick picker colors
+	"pickerGroup.border": "#{{ border_color }}99",
+	"pickerGroup.foreground": "#{{ border_color }}99",
 
-  // Extensions
-  "extensionButton.prominentBackground": "#{{ interactive_color }}",
-  "extensionButton.prominentHoverBackground": "#{{ orange }}AA",
+	// Extensions
+	"extensionButton.prominentBackground": "#{{ active_color }}",
+	"extensionButton.prominentHoverBackground": "#{{ orange }}AA",
 
-  // Integrated Terminal colors
-  "terminal.background": "#{{ bg_0 }}",
-  "terminal.foreground": "#{{ fg_1 }}",
-  "terminal.selectionBackground": "#{{ bg_2 }}",
-  "terminalCursor.background": "#{{ bg_1 }}",
-  "terminalCursor.foreground": "#{{ fg_0 }}",
-  "terminal.ansiBlack": "#{{ bg_1 }}",
-  "terminal.ansiRed": "#{{ red }}",
-  "terminal.ansiGreen": "#{{ green }}",
-  "terminal.ansiYellow": "#{{ yellow }}",
-  "terminal.ansiBlue": "#{{ blue }}",
-  "terminal.ansiMagenta": "#{{ magenta }}",
-  "terminal.ansiCyan": "#{{ cyan }}",
-  "terminal.ansiWhite": "#{{ fg_0 }}",
-  "terminal.ansiBrightBlack": "#{{ bg_0 }}",
-  "terminal.ansiBrightRed": "#{{ orange }}",
-  "terminal.ansiBrightGreen": "#{{ green }}",
-  "terminal.ansiBrightYellow": "#{{ yellow }}",
-  "terminal.ansiBrightBlue": "#{{ blue }}",
-  "terminal.ansiBrightMagenta": "#{{ violet }}",
-  "terminal.ansiBrightCyan": "#{{ blue }}",
-  "terminal.ansiBrightWhite": "#{{ fg_1 }}",
+	// Integrated Terminal colors
+	"terminal.background": "#{{ bg_0 }}",
+	"terminal.foreground": "#{{ fg_1 }}",
+	"terminal.selectionBackground": "#{{ bg_2 }}",
+	"terminalCursor.background": "#{{ bg_1 }}",
+	"terminalCursor.foreground": "#{{ fg_0 }}",
+	"terminal.ansiBlack": "#{{ bg_1 }}",
+	"terminal.ansiRed": "#{{ red }}",
+	"terminal.ansiGreen": "#{{ green }}",
+	"terminal.ansiYellow": "#{{ yellow }}",
+	"terminal.ansiBlue": "#{{ blue }}",
+	"terminal.ansiMagenta": "#{{ magenta }}",
+	"terminal.ansiCyan": "#{{ cyan }}",
+	"terminal.ansiWhite": "#{{ fg_0 }}",
+	"terminal.ansiBrightBlack": "#{{ bg_0 }}",
+	"terminal.ansiBrightRed": "#{{ orange }}",
+	"terminal.ansiBrightGreen": "#{{ green }}",
+	"terminal.ansiBrightYellow": "#{{ yellow }}",
+	"terminal.ansiBrightBlue": "#{{ blue }}",
+	"terminal.ansiBrightMagenta": "#{{ violet }}",
+	"terminal.ansiBrightCyan": "#{{ blue }}",
+	"terminal.ansiBrightWhite": "#{{ fg_1 }}",
 
-  // Welcome page colors
-  "walkThrough.embeddedEditorBackground": "#{{ bg_0 }}",
+	// Welcome page colors
+	"walkThrough.embeddedEditorBackground": "#{{ bg_0 }}",
 
-  // Settings Editor colors
-  "settings.textInputBackground": "#{{ bg_2 }}",
-  "settings.numberInputBackground": "#{{ bg_2 }}",
-  "settings.checkboxBackground": "#{{ bg_2 }}",
-  "settings.dropdownBackground": "#{{ bg_2 }}"
+	// Settings Editor colors
+	"settings.textInputBackground": "#{{ bg_2 }}",
+	"settings.numberInputBackground": "#{{ bg_2 }}",
+	"settings.checkboxBackground": "#{{ bg_2 }}",
+	"settings.dropdownBackground": "#{{ bg_2 }}"
 }
