@@ -1,5 +1,24 @@
 # Solarized and Selenized for VS Code
 
+This extension contains the following color themes and variants:
+
+* Selenized Light
+* Selenized Dark
+* Selenized White (TODO)
+* Selenized Black (TODO)
+* Solarized Light (TODO)
+* Solarized Dark (TODO)
+
+## Screenshots
+
+### Workbench (UI)
+
+TODO
+
+### Editor
+
+TODO
+
 ## Templatized color theme files
 
 Maintaining loose vscode color theme extension JSON files with raw sRGB values
