@@ -35,6 +35,12 @@
 	"input.foreground": "#adbcbc",
 	"input.placeholderForeground": "#718b90",
 	"inputOption.activeBorder": "#39c7b999",
+	"inputValidation.errorBackground": "#fd564e99",
+	"inputValidation.errorBorder": "#fd564e4A",
+	"inputValidation.warningBackground": "#e3b23099",
+	"inputValidation.warningBorder": "#e3b2304A",
+	"inputValidation.infoBackground": "#39c7b999",
+	"inputValidation.infoBorder": "#39c7b94A",
 
 	// Badge
 	"badge.background": "#0096f5AA",
@@ -116,6 +122,8 @@
 	"statusBarItem.remoteBackground": "#0096f5",
 	"statusBarItem.prominentBackground": "#053d48",
 	"statusBarItem.prominentHoverBackground": "#275b6999",
+	"statusBarItem.errorBackground": "#fd564e",
+	"statusBarItem.warningBackground": "#e3b230",
 
 	// Debug colors
 	"debugToolBar.background": "#0e4956",
