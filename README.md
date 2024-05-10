@@ -9,7 +9,7 @@ partials.
 Let's take a look at a top-level [`Selenized Light-color-theme.json.liquid`][1]
 file, for instance. This file compiles to the unwieldy vscode color theme file
 [`Selenized Light-color-theme.json`][2]. However, the "source" template itself
-looks quite simple:
+is quite simple:
 
 ```liquid
 {% render
@@ -20,12 +20,12 @@ looks quite simple:
 ```
 
 Where [`_selenized-color-theme.json.liquid`][3] is a Selenized color theme
-template that can be instantiated as dark or light variant with the injected
+template that can be instantiated in dark or light variant with the injected
 variable `type`.
 
-Taking this idea further, the content of that template is broken down into its
-constituents parts: **Workbench (UI)** colors, **TextMate token** (fallback)
-colors, and **semantic syntax token** (LSP-provided) colors.
+Taking this idea further, the content of *that* template is further broken down
+into its constituents parts: **Workbench (UI)** colors, **TextMate token**
+(fallback) colors, and **semantic syntax token** (LSP-provided) colors.
 
 ```liquid
 {%- assign colors = colors | map: "srgb_hex" -%}
@@ -86,7 +86,7 @@ colors, and **semantic syntax token** (LSP-provided) colors.
 
 As you can see, each component template is injected with theme-agnostic base
 color names. There are 16 of them and they roughly follow the [Base16][4] color
-themeing framework.
+theming framework.
 
 What this means is that `colors`, `tokenColors`, and `semanticTokenColors` can
 now be expressed in terms of color variable names that are independent of the
@@ -123,21 +123,21 @@ target color theme. For example:
 ```
 
 This also keeps things DRY. The same template files are shared between Selenized
-Light, Selenized Dark, Solarized Light, and Solarized Dark (the four
-colorschemes that are defined in this repository).
+Light, Selenized Dark, Solarized Light, and Solarized Dark--the four
+colorschemes that are defined in this repository.
 
 Indeed, these three components are defined as three template partials files
 in a [`common/`][5] directory.
 
 ## Palette for color values injection
 
-The templates (and the shared component partials that they instantiate) are
+The templates (and the shared components partials that they instantiate) are
 injected with color values that are derived from one of the [palette files][6].
 Each of them is defined as a yaml file that contains 16 colors (per Base16
 convention).
 
 Each color in a palette has a name and index in an array. Its canonical values
-are in CIE L*a*b* colorspace. The palette file must first be processed to
+are in CIE L\*a\*b\* colorspace. The palette file must first be processed to
 convert those values into sRGB, and then into Liquid objects before they can
 be injected into the templates for rendering the final vscode JSON files.
 
