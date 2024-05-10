@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.2 | 2024-05-10
+
+* Add icon to extension manifest.
+
 ## 0.1.1 | 2024-05-10
 
 * Tweak some workbench colors.
