@@ -5,66 +5,30 @@
 //    --unroll_colors_hex \
 //    --palette ../vscode-helios-selene/palettes/selenized-dark.yaml \
 //    -d ../vscode-helios-selene/themes/common \
+//    -d ../vscode-helios-selene/themes/selenized \
 //    -t ../vscode-helios-selene/themes/selenized/dark-color-theme.json.liquid \
 //    > ../vscode-helios-selene/themes/Selenized\ Dark-color-theme.json \
 //    ; popd
 
-{%- comment %}
-  TODO: Use {% liquid ... %} tag when it is supported by rust-liquid to consolidate below.
-{% endcomment %}
 {%- assign type = "dark" %}
 
-{%- comment %}
-  This template is injected with Selenized color palette's color names (bg_0, dim_0, etc).
-  Create base16 name aliases for them, since the shared partials assume base16 names.
-{% endcomment %}
-{%- assign base00 = bg_0 %}
-{%- assign base01 = bg_1 %}
-{%- assign base02 = bg_2 %}
-{%- assign base03 = dim_0 %}
-{%- assign base04 = fg_0 %}
-{%- assign base05 = fg_1 %}
-{%- assign base06 = unused_0 %}
-{%- assign base07 = unused_1 %}
-{%- assign base08 = red %}
-{%- assign base09 = orange %}
-{%- assign base0a = magenta %}
-{%- assign base0b = green %}
-{%- assign base0c = cyan %}
-{%- assign base0d = blue %}
-{%- assign base0e = yellow %}
-{%- assign base0f = violet %}
-
-{
-  "name": "Selenized Dark",
-  "type": "{{ type }}",
-
-  // Workbench (UI) colors
-  "colors": {% render
-    "workbench-colors.json.liquid",
+{%- render
+  "_selenized-color-theme.json.liquid",
     type: type,
-    base00: base00,
-    base01: base01,
-    base02: base02,
-    base03: base03,
-    base04: base04,
-    base05: base05,
-    base06: base06,
-    base07: base07,
-    base08: base08,
-    base09: base09,
-    base0a: base0a,
-    base0b: base0b,
-    base0c: base0c,
-    base0d: base0d,
-    base0e: base0e,
-    base0f: base0f,
-  %},
-
-  // TextMate scoped token highlight colors (fallback)
-  "tokenColors": {% render "token-colors.json.liquid" %},
-
-  // Semantic token (LSP-provided) colors
-  "semanticHighlighting": true,
-  "semanticTokenColors": {% render "semantic-token-colors.json.liquid" %}
-}
+    bg_0: bg_0,
+    bg_1: bg_1,
+    bg_2: bg_2,
+    dim_0: dim_0,
+    fg_0: fg_0,
+    fg_1: fg_1,
+    unused_0: unused_0,
+    unused_1: unused_1,
+    red: red,
+    orange: orange,
+    magenta: magenta,
+    green: green,
+    cyan: cyan,
+    blue: blue,
+    yellow: yellow,
+    violet: violet,
+%}

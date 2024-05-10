@@ -5,6 +5,7 @@
 //    --unroll_colors_hex \
 //    --palette ../vscode-helios-selene/palettes/selenized-dark.yaml \
 //    -d ../vscode-helios-selene/themes/common \
+//    -d ../vscode-helios-selene/themes/selenized \
 //    -t ../vscode-helios-selene/themes/selenized/dark-color-theme.json.liquid \
 //    > ../vscode-helios-selene/themes/Selenized\ Dark-color-theme.json \
 //    ; popd
@@ -157,8 +158,7 @@
   "settings.numberInputBackground": "#275b69",
   "settings.checkboxBackground": "#275b69",
   "settings.dropdownBackground": "#275b69"
-}
-,
+},
 
   // TextMate scoped token highlight colors (fallback)
   "tokenColors": [
@@ -565,8 +565,7 @@
       "foreground": "#434343"
     }
   }
-]
-,
+],
 
   // Semantic token (LSP-provided) colors
   "semanticHighlighting": true,
@@ -574,4 +573,3 @@
   // TODO
 }
 }
-
