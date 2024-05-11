@@ -1,5 +1,15 @@
 # Solarized and Selenized for VS Code
 
+[Solarized](https://ethanschoonover.com/solarized/) is a sixteen color palette
+(eight monotones, eight accent colors) designed by Ethan Schoonover.
+
+[Selenized](https://github.com/jan-warchol/selenized) is a redesign on Solarized
+by Jan Warchoł. It improves on Solarized by providing better contrast and more
+distinguishable accent colors.
+
+The color values and comparison between both can be seen in this
+[blog post](https://pensieve.swijaya.me/solarized-selenized-cheatsheet).
+
 This extension contains the following color themes and variants:
 
 * Selenized Light
