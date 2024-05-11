@@ -23,6 +23,17 @@ colors:
     blue: 65
   srgb_hex: '003641'
 - base:
+    name: base02_star
+    lab:
+      l: 28.0
+      a: -12.0
+      b: -12.0
+  srgb:
+    red: 22
+    green: 72
+    blue: 84
+  srgb_hex: '164854'
+- base:
     name: base01
     lab:
       l: 45.0
@@ -33,17 +44,6 @@ colors:
     green: 110
     blue: 118
   srgb_hex: '566e76'
-- base:
-    name: base00
-    lab:
-      l: 50.0
-      a: -7.0
-      b: -7.0
-  srgb:
-    red: 99
-    green: 123
-    blue: 130
-  srgb_hex: 637b82
 - base:
     name: base0
     lab:

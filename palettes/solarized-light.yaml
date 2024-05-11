@@ -10,16 +10,16 @@ colors:
       l: 92.0
       a: 0.0
       b: 10.0
+  - name: base2_star
+    lab:
+      l: 83.0
+      a: 0.0
+      b: 10.0
   - name: base1
     lab:
       l: 65.0
       a: -5.0
       b: -2.0
-  - name: base0
-    lab:
-      l: 60.0
-      a: -6.0
-      b: -3.0
   - name: base00
     lab:
       l: 50.0
