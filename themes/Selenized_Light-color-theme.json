@@ -294,7 +294,7 @@
       "storage"
     ],
     "settings": {
-      "foreground": "#b38800"
+      "foreground": "#0073d2"
     }
   },
   {
@@ -680,10 +680,29 @@
 ,
 
   // Semantic token (LSP-provided) colors
-  // TODO
   "semanticHighlighting": true,
-  "semanticTokenColors": {
-  // TODO
+  "semanticTokenColors": 
+{
+  "namespace": "#7d64c5",
+  "type": "#b38800",
+  "type.defaultLibrary": "#b38800",
+  "struct": "#b38800",
+  "class": "#0073d2",
+  "class.defaultLibrary": "#0073d2",
+  "interface": "#009c8f",
+  "enum": "#539100",
+  "function": "#0073d2",
+  "function.defaultLibrary": "#0073d2",
+  "method": "#0073d2",
+  "macro": "#7d64c5",
+  "variable": "#52666d",
+  "variable.readonly": "#009c8f",
+  "variable.readonly.defaultLibrary": "#c75d20",
+  "parameter": "#52666d",
+  "property": "#52666d",
+  "property.readonly": "#52666d",
+  "enumMember": "#52666d",
+  "event": "#52666d"
 }
 }
 
