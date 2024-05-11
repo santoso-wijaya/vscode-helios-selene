@@ -1,0 +1,26 @@
+{%- assign colors = colors | map: "srgb_hex" -%}
+
+{
+  "name": "Solarized {{ type | capitalize }}",
+  "type": "{{ type }}",
+
+  // Workbench (UI) colors
+  "colors": {% render
+    "workbench-colors.json.liquid",
+    type: type,
+    base16cs: colors,
+  %},
+
+  // TextMate scoped token highlight colors (fallback)
+  "tokenColors": {% render
+    "token-colors.json.liquid",
+    base16cs: colors,
+  %},
+
+  // Semantic token (LSP-provided) colors
+  "semanticHighlighting": true,
+  "semanticTokenColors": {% render
+    "semantic-token-colors.json.liquid",
+    base16cs: colors,
+  %}
+}

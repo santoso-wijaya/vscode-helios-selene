@@ -21,6 +21,16 @@
         "label": "Selenized Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/Selenized_Dark-color-theme.json"
+      },
+      {
+        "label": "Solarized Light",
+        "uiTheme": "vs",
+        "path": "./themes/Solarized_Light-color-theme.json"
+      },
+      {
+        "label": "Solarized Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Solarized_Dark-color-theme.json"
       }
     ]
   },
@@ -35,7 +45,8 @@
     "solarized light",
     "selenized",
     "selenized light",
-    "selenized dark"
+    "selenized dark",
+    "base16"
   ],
   "homepage": "https://github.com/santoso-wijaya/vscode-helios-selene",
   "repository": {

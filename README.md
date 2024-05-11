@@ -6,8 +6,8 @@ This extension contains the following color themes and variants:
 * Selenized Dark
 * Selenized White (TODO)
 * Selenized Black (TODO)
-* Solarized Light (TODO)
-* Solarized Dark (TODO)
+* Solarized Light
+* Solarized Dark
 
 ## Screenshots
 

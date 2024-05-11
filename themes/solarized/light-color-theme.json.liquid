@@ -1,0 +1,17 @@
+// This is a generated file!
+//
+// $ pushd ../base16cs && \
+//    cargo run -p base16cs-cli -- \
+//    --unroll_colors_hex \
+//    --palette ../vscode-helios-selene/palettes/solarized-light.yaml \
+//    -d ../vscode-helios-selene/themes/common \
+//    -d ../vscode-helios-selene/themes/solarized \
+//    -t ../vscode-helios-selene/themes/solarized/light-color-theme.json.liquid \
+//    > ../vscode-helios-selene/themes/Solarized_Light-color-theme.json \
+//    ; popd
+
+{% render
+  "_solarized-color-theme.json.liquid",
+    type: "light",
+    colors: palette.colors,
+-%}
