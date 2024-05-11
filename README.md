@@ -19,7 +19,9 @@ This extension contains the following color themes and variants:
 
 ### Editor
 
-TODO
+[Selenized Light editor screenshot](assets/screenshot-editor-selenized-light.png)
+
+[Selenized Dark editor screenshot](assets/screenshot-editor-selenized-light.png)
 
 ## Templatized color theme files
 
