@@ -243,21 +243,43 @@
     "scope": [
       "variable",
       "variable.parameter",
-      "support.variable"
+      "variable.other.readwrite",
+      "support.variable",
+      "entity.name.variable"
     ],
     "settings": {
       "foreground": "#52666d"
     }
   },
   {
-    "name": "Functions",
+    "name": "Properties",
+    "scope": [
+      "variable.other.property",
+      "variable.other.constant.property"
+    ],
+    "settings": {
+      "foreground": "#52666d"
+    }
+  },
+  {
+    "name": "Functions and Methods",
     "scope": [
       "entity.name.function",
       "entity.name.function.declaration",
+      "entity.name.function.member",
       "support.function"
     ],
     "settings": {
       "foreground": "#0073d2"
+    }
+  },
+  {
+    "name": "Macros",
+    "scope": [
+      "entity.name.function.macro"
+    ],
+    "settings": {
+      "foreground": "#7d64c5"
     }
   },
   {
@@ -268,6 +290,7 @@
       "support.class",
       "support.type",
       "storage.type",
+      "storage.type.struct",
       "storage"
     ],
     "settings": {
@@ -282,6 +305,51 @@
     ],
     "settings": {
       "foreground": "#0073d2"
+    }
+  },
+  {
+    "name": "Defined Interface Name",
+    "scope": [
+      "entity.name.type.interface"
+    ],
+    "settings": {
+      "foreground": "#009c8f"
+    }
+  },
+  {
+    "name": "Defined Enum Name",
+    "scope": [
+      "entity.name.type.enum"
+    ],
+    "settings": {
+      "foreground": "#539100"
+    }
+  },
+  {
+    "name": "Enum Member",
+    "scope": [
+      "variable.other.enummember"
+    ],
+    "settings": {
+      "foreground": "#52666d"
+    }
+  },
+  {
+    "name": "Events",
+    "scope": [
+      "variable.other.event"
+    ],
+    "settings": {
+      "foreground": "#52666d"
+    }
+  },
+  {
+    "name": "Namespace",
+    "scope": [
+      "entity.name.namespace"
+    ],
+    "settings": {
+      "foreground": "#7d64c5"
     }
   },
   {
