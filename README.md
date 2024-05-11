@@ -4,8 +4,6 @@ This extension contains the following color themes and variants:
 
 * Selenized Light
 * Selenized Dark
-* Selenized White (TODO)
-* Selenized Black (TODO)
 * Solarized Light
 * Solarized Dark
 
@@ -29,9 +27,9 @@ Maintaining loose vscode color theme extension JSON files with raw sRGB values
 is tedious. So, I broke them up into shareable components as Liquid template
 partials.
 
-Let's take a look at a top-level [`Selenized Light-color-theme.json.liquid`][1]
+Let's take a look at a top-level [`selenized/light-color-theme.json.liquid`][1]
 file, for instance. This file compiles to the unwieldy vscode color theme file
-[`Selenized Light-color-theme.json`][2]. However, the "source" template itself
+[`Selenized_Light-color-theme.json`][2]. However, the "source" template itself
 is quite simple:
 
 ```liquid
@@ -144,7 +142,7 @@ be injected into the templates for rendering the final vscode JSON files.
 * [Semantic coloring in Color Themes][9]
 
 [1]: themes/selenized/light-color-theme.json.liquid
-[2]: <themes/Selenized Light-color-theme.json>
+[2]: themes/Selenized_Light-color-theme.json
 [3]: themes/selenized/_selenized-color-theme.json.liquid
 [4]: https://github.com/chriskempson/base16/blob/main/styling.md
 [5]: themes/common

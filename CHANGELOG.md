@@ -4,6 +4,7 @@
 
 * Tweak source Solarized palette.
 * Instantiate Solarized Light and Solarized Dark color themes.
+
 ## 0.1.3 | 2024-05-10
 
 * Tweak colors, both in workbench and editor.
