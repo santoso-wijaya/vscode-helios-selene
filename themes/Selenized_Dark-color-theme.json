@@ -93,7 +93,7 @@
 
 	// Editor widget colors
 	"editorWidget.background": "#0e4956",
-	"editorHoverWidget.background": "#275b69",
+	"editorHoverWidget.background": "#0e4956",
 	"editorStickyScroll.background": "#0e4956",
 	"editorStickyScrollHover.background": "#718b9030",
 
