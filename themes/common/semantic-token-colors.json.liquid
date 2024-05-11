@@ -41,46 +41,46 @@
   Colors are generically assigned using color theme agnostic naming scheme
   as follows (assuming light mode):
 
-  | base name | alias   | use                                         |
+  | base16cs  | alias   | use                                         |
   | ----------|---------|---------------------------------------------|
-  | base00    | bg_0    | default background                          |
-  | base01    | bg_1    | lighter background                          |
-  | base02    | bg_2    | selection background                        |
-  | base03    | dim_0   | dim foreground (comments, invis chars, etc) |
-  | base04    | fg_0    | lighter foreground                          |
-  | base05    | fg_1    | default foreground                          |
-  | base06    |         | lighter (oft unused)                        |
-  | base07    |         | lightest (oft unused)                       |
-  | base08    | red     |                                             |
-  | base09    | orange  |                                             |
-  | base0a    | magenta |                                             |
-  | base0b    | green   |                                             |
-  | base0c    | cyan    |                                             |
-  | base0d    | blue    |                                             |
-  | base0e    | yellow  |                                             |
-  | base0f    | violet  |                                             |
+  | 0         | bg_0    | default background                          |
+  | 1         | bg_1    | lighter background                          |
+  | 2         | bg_2    | selection background                        |
+  | 3         | dim_0   | dim foreground (comments, invis chars, etc) |
+  | 4         | fg_0    | lighter foreground                          |
+  | 5         | fg_1    | default foreground                          |
+  | 6         |         | lighter (oft unused)                        |
+  | 7         |         | lightest (oft unused)                       |
+  | 8         | red     |                                             |
+  | 9         | orange  |                                             |
+  | 10        | magenta |                                             |
+  | 11        | green   |                                             |
+  | 12        | cyan    |                                             |
+  | 13        | blue    |                                             |
+  | 14        | yellow  |                                             |
+  | 15        | violet  |                                             |
 
   Note: Dark mode use the same base color naming scheme, with the lighter/darker
   semantics reversed.
 
   When this template is rendered as a partial (i.e. `{% render %}`), it assumes
-  that the above base names are injected as variables. But the alias names are
-  used throughout this file to make it more readable.
+  that the above base names are injected as attributes of a `colors` variable.
+  They are reassigned with alias names to make them more readable.
 {% endcomment %}
-{%- assign bg_0 =     base00 %}
-{%- assign bg_1 =     base01 %}
-{%- assign bg_2 =     base02 %}
-{%- assign dim_0 =    base03 %}
-{%- assign fg_0 =     base04 %}
-{%- assign fg_1 =     base05 %}
-{%- assign red =      base08 %}
-{%- assign orange =   base09 %}
-{%- assign magenta =  base0a %}
-{%- assign green =    base0b %}
-{%- assign cyan =     base0c %}
-{%- assign blue =     base0d %}
-{%- assign yellow =   base0e %}
-{%- assign violet =   base0f %}
+{%- assign bg_0 =     base16cs[0] %}
+{%- assign bg_1 =     base16cs[1] %}
+{%- assign bg_2 =     base16cs[2] %}
+{%- assign dim_0 =    base16cs[3] %}
+{%- assign fg_0 =     base16cs[4] %}
+{%- assign fg_1 =     base16cs[5] %}
+{%- assign red =      base16cs[8] %}
+{%- assign orange =   base16cs[9] %}
+{%- assign magenta =  base16cs[10] %}
+{%- assign green =    base16cs[11] %}
+{%- assign cyan =     base16cs[12] %}
+{%- assign blue =     base16cs[13] %}
+{%- assign yellow =   base16cs[14] %}
+{%- assign violet =   base16cs[15] -%}
 {
   "decorator": "#{{ fg_0 }}",
 

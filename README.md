@@ -47,8 +47,9 @@ template that can be instantiated in dark or light variant with the injected
 variable `type`.
 
 Taking this idea further, the content of *that* template is further broken down
-into its constituents parts: **Workbench (UI)** colors, **TextMate token**
-(fallback) colors, and **semantic syntax token** (LSP-provided) colors.
+into its constituents parts: **Workbench** (UI) colors, TextMate
+**scoped token** (fallback) colors, and **semantic syntax token** (LSP-provided)
+colors.
 
 ```liquid
 {%- assign colors = colors | map: "srgb_hex" -%}
@@ -61,80 +62,34 @@ into its constituents parts: **Workbench (UI)** colors, **TextMate token**
   "colors": {% render
     "workbench-colors.json.liquid",
     type: type,
-    base00: colors[0],
-    base01: colors[1],
-    base02: colors[2],
-    base03: colors[3],
-    base04: colors[4],
-    base05: colors[5],
-    base06: colors[6],
-    base07: colors[7],
-    base08: colors[8],
-    base09: colors[9],
-    base0a: colors[10],
-    base0b: colors[11],
-    base0c: colors[12],
-    base0d: colors[13],
-    base0e: colors[14],
-    base0f: colors[15],
+    base16cs: colors,
   %},
 
   // TextMate scoped token highlight colors (fallback)
   "tokenColors": {% render
     "token-colors.json.liquid",
-    base00: colors[0],
-    base01: colors[1],
-    base02: colors[2],
-    base03: colors[3],
-    base04: colors[4],
-    base05: colors[5],
-    base06: colors[6],
-    base07: colors[7],
-    base08: colors[8],
-    base09: colors[9],
-    base0a: colors[10],
-    base0b: colors[11],
-    base0c: colors[12],
-    base0d: colors[13],
-    base0e: colors[14],
-    base0f: colors[15],
+    base16cs: colors,
   %},
 
   // Semantic token (LSP-provided) colors
   "semanticHighlighting": true,
   "semanticTokenColors": {% render
     "semantic-token-colors.json.liquid",
-    base00: colors[0],
-    base01: colors[1],
-    base02: colors[2],
-    base03: colors[3],
-    base04: colors[4],
-    base05: colors[5],
-    base06: colors[6],
-    base07: colors[7],
-    base08: colors[8],
-    base09: colors[9],
-    base0a: colors[10],
-    base0b: colors[11],
-    base0c: colors[12],
-    base0d: colors[13],
-    base0e: colors[14],
-    base0f: colors[15],
+    base16cs: colors,
   %}
 }
 ```
 
-As you can see, each component template is injected with theme-agnostic base
-color names. There are 16 of them and they roughly follow the [Base16][4] color
-theming framework.
+As you can see, each component template is injected with a theme-agnostic array
+of 16 base colors. They roughly follow the [Base16][4] color theming framework.
 
 What this means is that `colors`, `tokenColors`, and `semanticTokenColors` can
 now be expressed in terms of color variable names that are independent of the
 target color theme. For example:
 
 ```liquid
-{%- assign fg_0 =     base04 %}
-{%- assign orange =   base09 %}
+{%- assign fg_0 =     base16cs[4] %}
+{%- assign orange =   base16cs[9] %}
 
 ...
 
@@ -164,10 +119,11 @@ target color theme. For example:
 
 This also keeps things DRY. The same template files are shared between Selenized
 Light, Selenized Dark, Solarized Light, and Solarized Dark--the four
-colorschemes that are defined in this repository.
+colorschemes that are defined in this repository. It makes tweaking colors a
+lot easier and maintenance much less tedious.
 
-Indeed, these three components are defined as three template partials files
-in a [`common/`][5] directory.
+These three core components are defined as three template partials files in
+[`common/`][5] directory.
 
 ## Palette for color values injection
 
@@ -176,9 +132,9 @@ injected with color values that are derived from one of the [palette files][6].
 Each of them is defined as a yaml file that contains 16 colors (per Base16
 convention).
 
-Each color in a palette has a name and index in an array. Its canonical values
-are in CIE L\*a\*b\* colorspace. The palette file must first be processed to
-convert those values into sRGB, and then into Liquid objects before they can
+Each color in a palette has a name and index in a `colors` array. Its canonical
+values are in CIE L\*a\*b\* colorspace. The palette file must first be processed
+to convert those values into sRGB, and then into Liquid objects before they can
 be injected into the templates for rendering the final vscode JSON files.
 
 ## For more information
