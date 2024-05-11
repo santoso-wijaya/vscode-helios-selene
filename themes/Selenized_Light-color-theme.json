@@ -224,7 +224,7 @@
       "keyword.other"
     ],
     "settings": {
-      "foreground": "#539100"
+      "foreground": "#b38800"
     }
   },
   {
@@ -294,7 +294,7 @@
       "storage"
     ],
     "settings": {
-      "foreground": "#0073d2"
+      "foreground": "#539100"
     }
   },
   {
@@ -511,7 +511,7 @@
       "support.type.property-name"
     ],
     "settings": {
-      "foreground": "#b38800"
+      "foreground": "#539100"
     }
   },
   {
@@ -652,6 +652,15 @@
     }
   },
   {
+    "name": "Attributes",
+    "scope": [
+      "meta.attribute"
+    ],
+    "settings": {
+      "foreground": "#52666d"
+    }
+  },
+  {
     "name": "Extra: Diff Range",
     "scope": [
       "meta.diff.range",
@@ -683,10 +692,12 @@
   "semanticHighlighting": true,
   "semanticTokenColors": 
 {
+  "decorator": "#52666d",
+
   "namespace": "#7d64c5",
   "type": "#b38800",
   "type.defaultLibrary": "#b38800",
-  "struct": "#b38800",
+  "struct": "#539100",
   "class": "#0073d2",
   "class.defaultLibrary": "#0073d2",
   "interface": "#009c8f",

@@ -82,6 +82,8 @@
 {%- assign yellow =   base0e %}
 {%- assign violet =   base0f %}
 {
+  "decorator": "#{{ fg_0 }}",
+
   {% comment %}
     The following token selectors are mapped to fallback TextMate scopes.
     See: https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#predefined-textmate-scope-mappings
@@ -89,7 +91,7 @@
   "namespace": "#{{ violet }}",
   "type": "#{{ yellow }}",
   "type.defaultLibrary": "#{{ yellow }}",
-  "struct": "#{{ yellow }}",
+  "struct": "#{{ green }}",
   "class": "#{{ blue }}",
   "class.defaultLibrary": "#{{ blue }}",
   "interface": "#{{ cyan }}",
