@@ -13,15 +13,15 @@ This extension contains the following color themes and variants:
 
 ### Workbench (UI)
 
-[Selenized Light screenshot](assets/screenshot-workbench-selenized-light.png)
+![Selenized Light workbench screenshot](assets/screenshot-workbench-selenized-light.png "Selenized Light workbench")
 
-[Selenized Dark screenshot](assets/screenshot-workbench-selenized-light.png)
+![Selenized Dark workbench screenshot](assets/screenshot-workbench-selenized-dark.png "Selenized Dark workbench")
 
 ### Editor
 
-[Selenized Light editor screenshot](assets/screenshot-editor-selenized-light.png)
+![Selenized Light editor screenshot](assets/screenshot-editor-selenized-light.png "Selenized Light editor")
 
-[Selenized Dark editor screenshot](assets/screenshot-editor-selenized-light.png)
+![Selenized Dark editor screenshot](assets/screenshot-editor-selenized-dark.png "Selenized Dark editor")
 
 ## Templatized color theme files
 
