@@ -83,11 +83,18 @@
 {%- assign violet =   base16cs[15] -%}
 {
   "decorator": "#{{ fg_0 }}",
+  "variable.mutable": { "underline": true },
+  "const.constant": "#{{ cyan }}",
+
+  // Rust
+  "*.attribute:rust": "#{{ dim_0 }}",
 
   {% comment %}
     The following token selectors are mapped to fallback TextMate scopes.
     See: https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#predefined-textmate-scope-mappings
+    They are currently set with the same color values in token-colors.json.liquid.
   {% endcomment -%}
+  // Selectors with TextMate scoped token fallback settings.
   "namespace": "#{{ violet }}",
   "type": "#{{ yellow }}",
   "type.defaultLibrary": "#{{ yellow }}",

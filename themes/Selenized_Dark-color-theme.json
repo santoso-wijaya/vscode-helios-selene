@@ -692,7 +692,13 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
   "decorator": "#adbcbc",
+  "variable.mutable": { "underline": true },
+  "const.constant": "#39c7b9",
 
+  // Rust
+  "*.attribute:rust": "#718b90",
+
+  // Selectors with TextMate scoped token fallback settings.
   "namespace": "#a58cec",
   "type": "#e3b230",
   "type.defaultLibrary": "#e3b230",
