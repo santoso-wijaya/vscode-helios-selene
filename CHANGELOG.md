@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.2 | 2024-05-22
+
+* Add "Helios/Selene" prefixes to the color themes' sub-titles.
+
 ## 0.2.0 | 2024-05-10
 
 * Tweak source Solarized palette.

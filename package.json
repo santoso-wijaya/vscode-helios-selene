@@ -2,7 +2,7 @@
   "name": "helios-selene",
   "displayName": "Solarized & Selenized",
   "description": "A Solarized and Selenized color themes combo for Visual Studio Code",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "publisher": "santoso-wijaya",
   "engines": {
     "vscode": "^1.89.0"
