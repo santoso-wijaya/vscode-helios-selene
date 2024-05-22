@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.2.3 | 2024-05-22
+## 0.2.4 | 2024-05-22
 
 * Add "Helios/Selene" prefixes to the color themes' ids.
 
