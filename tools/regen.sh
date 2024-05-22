@@ -5,7 +5,7 @@
 # TODO: This only works in my own workspace, as base16cs-cli isn't deployed yet.
 BASE16CS=../base16cs
 RENDER="cargo run --features=cli --bin render"
-CWD=$(PWD)
+CWD=$(pwd)
 
 pushd ${BASE16CS}
 
