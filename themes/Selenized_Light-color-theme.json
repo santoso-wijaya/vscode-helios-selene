@@ -162,7 +162,16 @@
   "terminal.ansiBrightWhite": "#384c52",
 
   // Welcome page colors
+  "welcomePage.background": "#fef3da",
+  "welcomePage.tileBackground": "#f0e4cc",
+  "welcomePage.progress.background": "#d6cbb4",
+  "welcomePage.progress.foreground": "#b38800",
   "walkThrough.embeddedEditorBackground": "#fef3da",
+
+  // Text colors
+  "textBlockQuote.background": "#f0e4cc",
+  "textCodeBlock.background": "#f0e4cc",
+  "textPreformat.background": "#f0e4cc",
 
   // Settings Editor colors
   "settings.textInputBackground": "#d6cbb4",
