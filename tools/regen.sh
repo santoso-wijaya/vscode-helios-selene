@@ -2,39 +2,46 @@
 
 # Compiles and regenerates vscode *-color-theme.json files from Liquid templates.
 
-# TODO: This only works in my own workspace, as base16cs-cli isn't deployed yet.
-BASE16CS=../base16cs
-RENDER="cargo run --features=cli --bin render"
-CWD=$(pwd)
+RENDER=base16cs-render
 
-pushd ${BASE16CS}
+# First: install base16cs-render binary from base16cs crate.
+if ! ${RENDER} --help &>/dev/null; then
+	cargo install base16cs --features=cli
+fi
 
-${RENDER} -- \
-	--palette ${CWD}/palettes/selenized-light.yaml \
-	-d ${CWD}/themes/common \
-	-d ${CWD}/themes/selenized \
-	-t ${CWD}/themes/selenized/light-color-theme.json.liquid \
-	>${CWD}/themes/Selenized_Light-color-theme.json
+SOURCEDIR=$(pwd)
+PALETTESDIR=${SOURCEDIR}/palettes
+THEMESDIR=${SOURCEDIR}/themes
+OUTDIR="${1:-$THEMESDIR}"
 
-${RENDER} -- \
-	--palette ${CWD}/palettes/selenized-dark.yaml \
-	-d ${CWD}/themes/common \
-	-d ${CWD}/themes/selenized \
-	-t ${CWD}/themes/selenized/dark-color-theme.json.liquid \
-	>${CWD}/themes/Selenized_Dark-color-theme.json
+echo "Compiling Selenized Light color theme..."
+${RENDER} \
+	--palette ${PALETTESDIR}/selenized-light.yaml \
+	-d ${THEMESDIR}/common \
+	-d ${THEMESDIR}/selenized \
+	-t ${THEMESDIR}/selenized/light-color-theme.json.liquid \
+	>${OUTDIR}/Selenized_Light-color-theme.json
 
-${RENDER} -- \
-	--palette ${CWD}/palettes/solarized-light.yaml \
-	-d ${CWD}/themes/common \
-	-d ${CWD}/themes/solarized \
-	-t ${CWD}/themes/solarized/light-color-theme.json.liquid \
-	>${CWD}/themes/Solarized_Light-color-theme.json
+echo "Compiling Selenized Dark color theme..."
+${RENDER} \
+	--palette ${PALETTESDIR}/selenized-dark.yaml \
+	-d ${THEMESDIR}/common \
+	-d ${THEMESDIR}/selenized \
+	-t ${THEMESDIR}/selenized/dark-color-theme.json.liquid \
+	>${OUTDIR}/Selenized_Dark-color-theme.json
 
-${RENDER} -- \
-	--palette ${CWD}/palettes/solarized-dark.yaml \
-	-d ${CWD}/themes/common \
-	-d ${CWD}/themes/solarized \
-	-t ${CWD}/themes/solarized/dark-color-theme.json.liquid \
-	>${CWD}/themes/Solarized_Dark-color-theme.json
+echo "Compiling Solarized Light color theme..."
+${RENDER} \
+	--palette ${PALETTESDIR}/solarized-light.yaml \
+	-d ${THEMESDIR}/common \
+	-d ${THEMESDIR}/solarized \
+	-t ${THEMESDIR}/solarized/light-color-theme.json.liquid \
+	>${OUTDIR}/Solarized_Light-color-theme.json
 
-popd
+echo "Compiling Solarized Dark color theme..."
+${RENDER} \
+	--palette ${PALETTESDIR}/solarized-dark.yaml \
+	-d ${THEMESDIR}/common \
+	-d ${THEMESDIR}/solarized \
+	-t ${THEMESDIR}/solarized/dark-color-theme.json.liquid \
+	>${OUTDIR}/Solarized_Dark-color-theme.json
