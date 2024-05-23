@@ -20,4 +20,6 @@ for themefile in ${OUTDIR}/*.json; do
 	echo "ok"
 done
 
+# Clean up and exit.
+rm -rf ${OUTDIR}
 exit 0
