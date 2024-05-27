@@ -470,25 +470,26 @@
       "punctuation.definition.tag.end.html"
     ],
     "settings": {
-      "foreground": "#0073d2"
+      "foreground": "#8f9894"
     }
   },
   {
     "name": "HTML: Tag Names",
     "scope": "entity.name.tag",
     "settings": {
-      "foreground": "#009c8f"
+      "foreground": "#0073d2"
     }
   },
   {
     "name": "HTML: Attribute Names",
     "scope": [
       "meta.tag entity.other.attribute-name",
+      "meta.attribute.class.html",
       "entity.other.attribute-name.html"
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#0073d2"
+      "foreground": "#8f9894"
     }
   },
   {
