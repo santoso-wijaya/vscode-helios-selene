@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.3.2 | 2024-05-27
+
+* Adjust workbench panel and border colors.
+* Tweak javascript and diff/patch file highlight colors.
+
 ## 0.3.1 | 2024-05-27
 
 * Tweak editor inlay foreground shade.
