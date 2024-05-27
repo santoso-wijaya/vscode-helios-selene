@@ -228,7 +228,7 @@
       "keyword.other"
     ],
     "settings": {
-      "foreground": "#80b83c"
+      "foreground": "#e3b230"
     }
   },
   {
@@ -290,8 +290,6 @@
     "name": "Types and Type Modifiers",
     "scope": [
       "entity.name.type",
-      "entity.other.inherited-class",
-      "support.class",
       "support.type",
       "storage.type",
       "storage.type.struct",
@@ -305,10 +303,12 @@
     "name": "Defined Class Name",
     "scope": [
       "entity.name.class",
-      "entity.name.type.class"
+      "entity.name.type.class",
+      "entity.other.inherited-class",
+      "support.class"
     ],
     "settings": {
-      "foreground": "#e3b230"
+      "foreground": "#80b83c"
     }
   },
   {
@@ -384,14 +384,13 @@
   {
     "name": "Numbers, Characters",
     "scope": [
-      "constant.language",
       "constant.numeric",
       "constant.character",
       "constant",
       "variable.other.constant"
     ],
     "settings": {
-      "foreground": "#e3b230"
+      "foreground": "#80b83c"
     }
   },
   {
@@ -723,8 +722,8 @@
   "type": "#e3b230",
   "type.defaultLibrary": "#e3b230",
   "struct": "#80b83c",
-  "class": "#e3b230",
-  "class.defaultLibrary": "#e3b230",
+  "class": "#80b83c",
+  "class.defaultLibrary": "#80b83c",
   "interface": "#f38649",
   "enum": "#80b83c",
   "function": "#0096f5",
@@ -732,7 +731,7 @@
   "method": "#0096f5",
   "macro": "#a58cec",
   "variable": "#adbcbc",
-  "variable.readonly": "#39c7b9",
+  "variable.readonly": "#80b83c",
   "variable.readonly.defaultLibrary": "#f38649",
   "parameter": "#adbcbc",
   "property": "#adbcbc",

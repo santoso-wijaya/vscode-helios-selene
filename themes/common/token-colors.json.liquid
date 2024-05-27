@@ -94,7 +94,7 @@
       "keyword.other"
     ],
     "settings": {
-      "foreground": "#{{ green }}"
+      "foreground": "#{{ yellow }}"
     }
   },
   {
@@ -156,8 +156,6 @@
     "name": "Types and Type Modifiers",
     "scope": [
       "entity.name.type",
-      "entity.other.inherited-class",
-      "support.class",
       "support.type",
       "storage.type",
       "storage.type.struct",
@@ -171,10 +169,12 @@
     "name": "Defined Class Name",
     "scope": [
       "entity.name.class",
-      "entity.name.type.class"
+      "entity.name.type.class",
+      "entity.other.inherited-class",
+      "support.class"
     ],
     "settings": {
-      "foreground": "#{{ yellow }}"
+      "foreground": "#{{ green }}"
     }
   },
   {
@@ -250,14 +250,13 @@
   {
     "name": "Numbers, Characters",
     "scope": [
-      "constant.language",
       "constant.numeric",
       "constant.character",
       "constant",
       "variable.other.constant"
     ],
     "settings": {
-      "foreground": "#{{ yellow }}"
+      "foreground": "#{{ green }}"
     }
   },
   {

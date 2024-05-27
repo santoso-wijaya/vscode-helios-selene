@@ -228,7 +228,7 @@
       "keyword.other"
     ],
     "settings": {
-      "foreground": "#8d9800"
+      "foreground": "#bb8801"
     }
   },
   {
@@ -290,8 +290,6 @@
     "name": "Types and Type Modifiers",
     "scope": [
       "entity.name.type",
-      "entity.other.inherited-class",
-      "support.class",
       "support.type",
       "storage.type",
       "storage.type.struct",
@@ -305,10 +303,12 @@
     "name": "Defined Class Name",
     "scope": [
       "entity.name.class",
-      "entity.name.type.class"
+      "entity.name.type.class",
+      "entity.other.inherited-class",
+      "support.class"
     ],
     "settings": {
-      "foreground": "#bb8801"
+      "foreground": "#8d9800"
     }
   },
   {
@@ -384,14 +384,13 @@
   {
     "name": "Numbers, Characters",
     "scope": [
-      "constant.language",
       "constant.numeric",
       "constant.character",
       "constant",
       "variable.other.constant"
     ],
     "settings": {
-      "foreground": "#bb8801"
+      "foreground": "#8d9800"
     }
   },
   {
@@ -723,8 +722,8 @@
   "type": "#bb8801",
   "type.defaultLibrary": "#bb8801",
   "struct": "#8d9800",
-  "class": "#bb8801",
-  "class.defaultLibrary": "#bb8801",
+  "class": "#8d9800",
+  "class.defaultLibrary": "#8d9800",
   "interface": "#cf4b15",
   "enum": "#8d9800",
   "function": "#008dd1",
@@ -732,7 +731,7 @@
   "method": "#008dd1",
   "macro": "#5c73c4",
   "variable": "#637b82",
-  "variable.readonly": "#1fa198",
+  "variable.readonly": "#8d9800",
   "variable.readonly.defaultLibrary": "#cf4b15",
   "parameter": "#637b82",
   "property": "#637b82",
