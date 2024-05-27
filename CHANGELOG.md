@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.3.3 | 2024-05-27
+
+* Adjust editor hover background.
+* Tweak types, interfaces, methods, language constants and controls colors.
+
 ## 0.3.2 | 2024-05-27
 
 * Adjust workbench panel and border colors.
