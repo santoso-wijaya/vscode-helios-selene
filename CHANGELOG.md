@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.3.1 | 2024-05-27
+
+* Tweak editor inlay foreground shade.
+* Restore input validation colors (workbench) to vscode defaults.
+
 ## 0.3.0 | 2024-05-27
 
 * Various workbench and token color tweaks and fixes to improve contrast and
