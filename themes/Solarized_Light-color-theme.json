@@ -20,7 +20,7 @@
   "foreground": "#566e76",
   "disabledForeground": "#92a1a1",
   "focusBorder": "#cf4b1599",
-  "selection.background": "#d7cebc",
+  "selection.background": "#f0e7d5",
 
   // Button control
   "button.background": "#bb8801",
@@ -31,7 +31,7 @@
 
   // Input control
   "input.background": "#d7cebc",
-  "input.border": "#92a1a14A",
+  "input.border": "#92a1a1",
   "input.foreground": "#637b82",
   "input.placeholderForeground": "#92a1a1",
   "inputOption.activeBorder": "#cf4b1599",
