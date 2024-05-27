@@ -90,6 +90,7 @@
   "editorLineNumber.activeForeground": "#52666d",
   "editorLineNumber.foreground": "#8f9894",
   "editorWhitespace.foreground": "#8f9894AA",
+  "editorInlayHint.foreground": "#8f9894",
 
   // Editor widget colors
   "editorWidget.background": "#f0e4cc",
