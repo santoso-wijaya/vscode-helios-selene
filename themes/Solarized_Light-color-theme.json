@@ -71,6 +71,7 @@
   "tab.inactiveBackground": "#d7cebc",
   "tab.activeModifiedBorder": "#bb8801",
   "tab.activeBorderTop": "#bb8801",
+  "tab.activeBorder": "#bb8801",
 
   // Editor colors
   "editor.background": "#fff6e3",
@@ -135,6 +136,7 @@
 
   // Integrated Terminal colors
   "terminal.background": "#fff6e3",
+  "terminal.border": "#92a1a1",
   "terminal.foreground": "#566e76",
   "terminal.selectionBackground": "#f0e7d5",
   "terminalCursor.background": "#f0e7d5",
