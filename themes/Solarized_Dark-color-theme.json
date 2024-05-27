@@ -540,14 +540,14 @@
     "name": "Markup: Changed",
     "scope": "markup.changed",
     "settings": {
-      "foreground": "#92a1a1"
+      "foreground": "#bb8801"
     }
   },
   {
     "name": "Markup: Deletion",
     "scope": "markup.deleted",
     "settings": {
-      "foreground": "#92a1a1"
+      "foreground": "#e0332e"
     }
   },
   {
@@ -561,14 +561,15 @@
     "name": "Markup: Error",
     "scope": "markup.error",
     "settings": {
-      "foreground": "#e0332e"
+      "fontStyle": "bold",
+      "foreground": "#f2579c"
     }
   },
   {
     "name": "Markup: Insertion",
     "scope": "markup.inserted",
     "settings": {
-      "foreground": "#92a1a1"
+      "foreground": "#8d9800"
     }
   },
   {
@@ -644,7 +645,7 @@
       "markup.italic"
     ],
     "settings": {
-      "foreground": "#8d9800"
+      "foreground": "#92a1a1"
     }
   },
   {
@@ -665,6 +666,13 @@
     }
   },
   {
+    "name": "Extra: Diff",
+    "scope": "meta.diff",
+    "settings": {
+      "fontStyle": "italic"
+    }
+  },
+  {
     "name": "Extra: Diff Range",
     "scope": [
       "meta.diff.range",
@@ -672,21 +680,28 @@
       "meta.separator"
     ],
     "settings": {
-      "foreground": "#829496"
+      "foreground": "#008dd1"
     }
   },
   {
     "name": "Extra: Diff From",
     "scope": "meta.diff.header.from-file",
     "settings": {
-      "foreground": "#829496"
+      "foreground": "#008dd1"
     }
   },
   {
     "name": "Extra: Diff To",
     "scope": "meta.diff.header.to-file",
     "settings": {
-      "foreground": "#829496"
+      "foreground": "#008dd1"
+    }
+  },
+  {
+    "name": "Extra: Diff Header",
+    "scope": "meta.diff.header",
+    "settings": {
+      "foreground": "#008dd1"
     }
   }
 ]

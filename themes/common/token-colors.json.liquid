@@ -407,14 +407,14 @@
     "name": "Markup: Changed",
     "scope": "markup.changed",
     "settings": {
-      "foreground": "#{{ fg_1 }}"
+      "foreground": "#{{ yellow }}"
     }
   },
   {
     "name": "Markup: Deletion",
     "scope": "markup.deleted",
     "settings": {
-      "foreground": "#{{ fg_1 }}"
+      "foreground": "#{{ red }}"
     }
   },
   {
@@ -428,14 +428,15 @@
     "name": "Markup: Error",
     "scope": "markup.error",
     "settings": {
-      "foreground": "#{{ red }}"
+      "fontStyle": "bold",
+      "foreground": "#{{ magenta }}"
     }
   },
   {
     "name": "Markup: Insertion",
     "scope": "markup.inserted",
     "settings": {
-      "foreground": "#{{ fg_1 }}"
+      "foreground": "#{{ green }}"
     }
   },
   {
@@ -511,7 +512,7 @@
       "markup.italic"
     ],
     "settings": {
-      "foreground": "#{{ green }}"
+      "foreground": "#{{ fg_1 }}"
     }
   },
   {
@@ -532,6 +533,13 @@
     }
   },
   {
+    "name": "Extra: Diff",
+    "scope": "meta.diff",
+    "settings": {
+      "fontStyle": "italic"
+    }
+  },
+  {
     "name": "Extra: Diff Range",
     "scope": [
       "meta.diff.range",
@@ -539,21 +547,28 @@
       "meta.separator"
     ],
     "settings": {
-      "foreground": "#{{ fg_0 }}"
+      "foreground": "#{{ blue }}"
     }
   },
   {
     "name": "Extra: Diff From",
     "scope": "meta.diff.header.from-file",
     "settings": {
-      "foreground": "#{{ fg_0 }}"
+      "foreground": "#{{ blue }}"
     }
   },
   {
     "name": "Extra: Diff To",
     "scope": "meta.diff.header.to-file",
     "settings": {
-      "foreground": "#{{ fg_0 }}"
+      "foreground": "#{{ blue }}"
+    }
+  },
+  {
+    "name": "Extra: Diff Header",
+    "scope": "meta.diff.header",
+    "settings": {
+      "foreground": "#{{ blue }}"
     }
   }
 ]
