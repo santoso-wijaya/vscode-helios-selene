@@ -66,7 +66,7 @@
   "sideBarTitle.foreground": "#566e76",
 
   // Editor Groups & Tabs
-  "editorGroup.border": "#637b82",
+  "editorGroup.border": "#92a1a1",
   "editorGroup.dropBackground": "#cf4b15AA",
   "editorGroupHeader.tabsBackground": "#d7cebc",
   "editorGroupHeader.tabsBorder": "#d7cebc",
@@ -112,7 +112,7 @@
   "titleBar.activeBackground": "#f0e7d5",
 
   // Panel colors
-  "panel.border": "#637b82",
+  "panel.border": "#92a1a1",
 
   // Status Bar colors
   "statusBar.foreground": "#566e76",
