@@ -109,6 +109,9 @@
 
   // Panel colors
   "panel.border": "#92a1a1",
+  "panelTitle.activeBorder": "#bb8801",
+  "panelTitle.activeForeground": "#566e76",
+  "panelTitle.inactiveForeground": "#92a1a1",
 
   // Status Bar colors
   "statusBar.foreground": "#566e76",
