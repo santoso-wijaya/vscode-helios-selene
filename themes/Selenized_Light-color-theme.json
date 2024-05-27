@@ -228,7 +228,7 @@
       "keyword.other"
     ],
     "settings": {
-      "foreground": "#b38800"
+      "foreground": "#539100"
     }
   },
   {
@@ -308,7 +308,7 @@
       "entity.name.type.class"
     ],
     "settings": {
-      "foreground": "#0073d2"
+      "foreground": "#b38800"
     }
   },
   {
@@ -317,7 +317,7 @@
       "entity.name.type.interface"
     ],
     "settings": {
-      "foreground": "#009c8f"
+      "foreground": "#c75d20"
     }
   },
   {
@@ -391,7 +391,7 @@
       "variable.other.constant"
     ],
     "settings": {
-      "foreground": "#009c8f"
+      "foreground": "#b38800"
     }
   },
   {
@@ -718,17 +718,14 @@
   // Rust
   "*.attribute:rust": "#8f9894",
 
-  // JavaScript
-  "class:javascript": { "foreground": "#d4212b", "fontStyle": "" },
-
   // Selectors with TextMate scoped token fallback settings.
   "namespace": "#7d64c5",
   "type": "#b38800",
   "type.defaultLibrary": "#b38800",
   "struct": "#539100",
-  "class": "#0073d2",
-  "class.defaultLibrary": "#0073d2",
-  "interface": "#009c8f",
+  "class": "#b38800",
+  "class.defaultLibrary": "#b38800",
+  "interface": "#c75d20",
   "enum": "#539100",
   "function": "#0073d2",
   "function.defaultLibrary": "#0073d2",
