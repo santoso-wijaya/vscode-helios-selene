@@ -89,8 +89,9 @@
 
   // Editor widget colors
   "editorWidget.background": "#0e4956",
-  "editorHoverWidget.background": "#0e4956",
-  "editorStickyScroll.background": "#0e4956",
+  "editorHoverWidget.background": "#275b69",
+  "editorHoverWidget.border": "#718b90",
+  "editorStickyScroll.background": "#275b69",
   "editorStickyScrollHover.background": "#718b9030",
 
   // Notebook colors
