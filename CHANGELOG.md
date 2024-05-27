@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.3.0 | 2024-05-27
+
+* Various workbench and token color tweaks and fixes to improve contrast and
+  UI usability.
+
 ## 0.2.4 | 2024-05-22
 
 * Add "Helios/Selene" prefixes to the color themes' ids.
