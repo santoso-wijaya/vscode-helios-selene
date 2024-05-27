@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.3.4 | 2024-05-28
+
+* Further tweak types, classes highlight colors: they are green now, to
+  distinguish from keywords (yellow).
+* Tweak other core highlight colors to set them apart.
+
 ## 0.3.3 | 2024-05-27
 
 * Adjust editor hover background.
