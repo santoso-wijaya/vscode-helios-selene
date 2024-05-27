@@ -220,16 +220,10 @@
     }
   },
   {
-    "name": "Operators",
-    "scope": "keyword.operator",
-    "settings": {
-      "foreground": "#52666d"
-    }
-  },
-  {
     "name": "Keywords",
     "scope": [
       "keyword.control",
+      "keyword.operator",
       "keyword.other"
     ],
     "settings": {
@@ -303,7 +297,8 @@
       "storage"
     ],
     "settings": {
-      "foreground": "#539100"
+      "fontStyle": "bold",
+      "foreground": "#52666d"
     }
   },
   {
@@ -707,6 +702,9 @@
 
   // Rust
   "*.attribute:rust": "#8f9894",
+
+  // JavaScript
+  "class:javascript": { "foreground": "#d4212b", "fontStyle": "" },
 
   // Selectors with TextMate scoped token fallback settings.
   "namespace": "#7d64c5",
