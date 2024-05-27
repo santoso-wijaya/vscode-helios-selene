@@ -34,13 +34,7 @@
   "input.border": "#92a1a1",
   "input.foreground": "#637b82",
   "input.placeholderForeground": "#92a1a1",
-  "inputOption.activeBorder": "#cf4b1599",
-  "inputValidation.errorBackground": "#e0332e99",
-  "inputValidation.errorBorder": "#e0332e4A",
-  "inputValidation.warningBackground": "#bb880199",
-  "inputValidation.warningBorder": "#bb88014A",
-  "inputValidation.infoBackground": "#1fa19899",
-  "inputValidation.infoBorder": "#1fa1984A",
+  "inputOption.activeBorder": "#cf4b15",
 
   // Badge
   "badge.background": "#bb8801AA",
