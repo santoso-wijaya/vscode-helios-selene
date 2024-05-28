@@ -22,6 +22,9 @@
   "focusBorder": "#c75d2099",
   "selection.background": "#f0e4cc",
 
+  // Action colors
+  "toolbar.hoverBackground": "#d6cbb480",
+
   // Button control
   "button.background": "#b38800",
 
