@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.3.4 | 2024-05-28
+## 0.3.5 | 2024-05-28
 
 * Further tweak types, classes highlight colors: they are green now, to
   distinguish from keywords (yellow).

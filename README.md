@@ -21,11 +21,15 @@ This extension contains the following color themes and variants:
 
 ### Workbench (UI)
 
+(Selene) Selenized Light and Dark
+
 ![Selenized Light workbench screenshot](assets/screenshot-workbench-selenized-light.png "Selenized Light workbench")
 
 ![Selenized Dark workbench screenshot](assets/screenshot-workbench-selenized-dark.png "Selenized Dark workbench")
 
 ### Editor
+
+(Selene) Selenized Light and Dark
 
 ![Selenized Light editor screenshot](assets/screenshot-editor-selenized-light.png "Selenized Light editor")
 
