@@ -87,7 +87,10 @@
   "const.constant": "#{{ cyan }}",
 
   // Rust
-  "*.attribute:rust": "#{{ dim_0 }}",
+  "*.attribute:rust": "#{{ fg_0 }}",
+  "derive.library:rust": "#{{ orange }}",
+  "deriveHelper.library:rust": "#{{ orange }}",
+  "string.attribute:rust": "#{{ cyan }}",
 
   {% comment %}
     The following token selectors are mapped to fallback TextMate scopes.
@@ -95,7 +98,7 @@
     They are currently set with the same color values in token-colors.json.liquid.
   {% endcomment -%}
   // Selectors with TextMate scoped token fallback settings.
-  "namespace": "#{{ violet }}",
+  "namespace": "#{{ magenta }}",
   "type": "#{{ yellow }}",
   "type.defaultLibrary": "#{{ yellow }}",
   "struct": "#{{ green }}",

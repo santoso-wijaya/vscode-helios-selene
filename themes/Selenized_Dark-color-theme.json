@@ -354,7 +354,7 @@
       "entity.name.namespace"
     ],
     "settings": {
-      "foreground": "#a58cec"
+      "foreground": "#f176bd"
     }
   },
   {
@@ -716,10 +716,13 @@
   "const.constant": "#39c7b9",
 
   // Rust
-  "*.attribute:rust": "#718b90",
+  "*.attribute:rust": "#adbcbc",
+  "derive.library:rust": "#f38649",
+  "deriveHelper.library:rust": "#f38649",
+  "string.attribute:rust": "#39c7b9",
 
   // Selectors with TextMate scoped token fallback settings.
-  "namespace": "#a58cec",
+  "namespace": "#f176bd",
   "type": "#e3b230",
   "type.defaultLibrary": "#e3b230",
   "struct": "#80b83c",
