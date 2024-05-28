@@ -245,7 +245,6 @@
   {
     "name": "Variables",
     "scope": [
-      "variable",
       "variable.parameter",
       "variable.other.readwrite",
       "support.variable",
@@ -262,7 +261,7 @@
       "variable.other.constant.property"
     ],
     "settings": {
-      "foreground": "#52666d"
+      "foreground": "#384c52"
     }
   },
   {
@@ -305,7 +304,9 @@
       "entity.name.class",
       "entity.name.type.class",
       "entity.other.inherited-class",
-      "support.class"
+      "support.class",
+      "meta.class.js",
+      "variable.other.readwrite.alias.js"
     ],
     "settings": {
       "foreground": "#539100"
@@ -335,7 +336,7 @@
       "variable.other.enummember"
     ],
     "settings": {
-      "foreground": "#52666d"
+      "foreground": "#384c52"
     }
   },
   {
@@ -344,7 +345,7 @@
       "variable.other.event"
     ],
     "settings": {
-      "foreground": "#52666d"
+      "foreground": "#384c52"
     }
   },
   {
@@ -586,7 +587,7 @@
       "markup.raw"
     ],
     "settings": {
-      "foreground": "#52666d"
+      "foreground": "#384c52"
     }
   },
   {
@@ -662,7 +663,7 @@
       "meta.attribute"
     ],
     "settings": {
-      "foreground": "#52666d"
+      "foreground": "#384c52"
     }
   },
   {
@@ -731,13 +732,13 @@
   "method": "#0073d2",
   "macro": "#7d64c5",
   "variable": "#52666d",
-  "variable.readonly": "#539100",
+  "variable.readonly": "#384c52",
   "variable.readonly.defaultLibrary": "#c75d20",
   "parameter": "#52666d",
-  "property": "#52666d",
-  "property.readonly": "#52666d",
-  "enumMember": "#52666d",
-  "event": "#52666d"
+  "property": "#384c52",
+  "property.readonly": "#384c52",
+  "enumMember": "#384c52",
+  "event": "#384c52"
 }
 
 }

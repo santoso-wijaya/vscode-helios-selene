@@ -245,7 +245,6 @@
   {
     "name": "Variables",
     "scope": [
-      "variable",
       "variable.parameter",
       "variable.other.readwrite",
       "support.variable",
@@ -262,7 +261,7 @@
       "variable.other.constant.property"
     ],
     "settings": {
-      "foreground": "#829496"
+      "foreground": "#92a1a1"
     }
   },
   {
@@ -305,7 +304,9 @@
       "entity.name.class",
       "entity.name.type.class",
       "entity.other.inherited-class",
-      "support.class"
+      "support.class",
+      "meta.class.js",
+      "variable.other.readwrite.alias.js"
     ],
     "settings": {
       "foreground": "#8d9800"
@@ -335,7 +336,7 @@
       "variable.other.enummember"
     ],
     "settings": {
-      "foreground": "#829496"
+      "foreground": "#92a1a1"
     }
   },
   {
@@ -344,7 +345,7 @@
       "variable.other.event"
     ],
     "settings": {
-      "foreground": "#829496"
+      "foreground": "#92a1a1"
     }
   },
   {
@@ -586,7 +587,7 @@
       "markup.raw"
     ],
     "settings": {
-      "foreground": "#829496"
+      "foreground": "#92a1a1"
     }
   },
   {
@@ -662,7 +663,7 @@
       "meta.attribute"
     ],
     "settings": {
-      "foreground": "#829496"
+      "foreground": "#92a1a1"
     }
   },
   {
@@ -731,13 +732,13 @@
   "method": "#008dd1",
   "macro": "#5c73c4",
   "variable": "#829496",
-  "variable.readonly": "#8d9800",
+  "variable.readonly": "#92a1a1",
   "variable.readonly.defaultLibrary": "#cf4b15",
   "parameter": "#829496",
-  "property": "#829496",
-  "property.readonly": "#829496",
-  "enumMember": "#829496",
-  "event": "#829496"
+  "property": "#92a1a1",
+  "property.readonly": "#92a1a1",
+  "enumMember": "#92a1a1",
+  "event": "#92a1a1"
 }
 
 }
