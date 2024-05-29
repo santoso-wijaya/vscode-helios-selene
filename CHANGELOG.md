@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.3.6 | 2024-05-29
+
+* Workbench tweaks: hover background, scrollbar shadow, active settings bar.
+* Make Rust semantic color highlights for decorators more prominent.
+
 ## 0.3.5 | 2024-05-28
 
 * Further tweak types, classes highlight colors: they are green now, to
