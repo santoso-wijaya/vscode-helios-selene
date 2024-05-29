@@ -39,6 +39,9 @@
   "input.placeholderForeground": "#8f9894",
   "inputOption.activeBorder": "#c75d20",
 
+  // Scrollbar control
+  "scrollbar.shadow": "#d6cbb4",
+
   // Badge
   "badge.background": "#b38800AA",
 
@@ -178,10 +181,11 @@
   "textPreformat.background": "#f0e4cc",
 
   // Settings Editor colors
-  "settings.textInputBackground": "#d6cbb4",
-  "settings.numberInputBackground": "#d6cbb4",
+  "settings.modifiedItemIndicator": "#b38800",
   "settings.checkboxBackground": "#d6cbb4",
-  "settings.dropdownBackground": "#d6cbb4"
+  "settings.dropdownBackground": "#d6cbb4",
+  "settings.textInputBackground": "#d6cbb4",
+  "settings.numberInputBackground": "#d6cbb4"
 }
 ,
 
