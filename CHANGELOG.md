@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.7 | 2024-05-29
+
+* Set type alias highlight color == interface == orange.
+
 ## 0.3.6 | 2024-05-29
 
 * Workbench tweaks: hover background, scrollbar shadow, active settings bar.

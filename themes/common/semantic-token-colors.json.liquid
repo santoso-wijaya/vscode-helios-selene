@@ -82,16 +82,6 @@
 {%- assign yellow =   base16cs[14] %}
 {%- assign violet =   base16cs[15] -%}
 {
-  "decorator": "#{{ fg_0 }}",
-  "variable.mutable": { "underline": true },
-  "const.constant": "#{{ cyan }}",
-
-  // Rust
-  "*.attribute:rust": "#{{ fg_0 }}",
-  "derive.library:rust": "#{{ orange }}",
-  "deriveHelper.library:rust": "#{{ orange }}",
-  "string.attribute:rust": "#{{ cyan }}",
-
   {% comment %}
     The following token selectors are mapped to fallback TextMate scopes.
     See: https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#predefined-textmate-scope-mappings
@@ -117,5 +107,16 @@
   "property": "#{{ fg_1 }}",
   "property.readonly": "#{{ fg_1 }}",
   "enumMember": "#{{ fg_1 }}",
-  "event": "#{{ fg_1 }}"
+  "event": "#{{ fg_1 }}",
+
+  "decorator": "#{{ fg_0 }}",
+  "variable.mutable": { "underline": true },
+  "const.constant": "#{{ cyan }}",
+  "type.declaration": "#{{ orange }}",
+
+  // Rust
+  "*.attribute:rust": "#{{ fg_0 }}",
+  "derive.library:rust": "#{{ orange }}",
+  "deriveHelper.library:rust": "#{{ orange }}",
+  "string.attribute:rust": "#{{ cyan }}"
 }

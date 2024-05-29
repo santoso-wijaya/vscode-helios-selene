@@ -322,7 +322,8 @@
   {
     "name": "Defined Interface Name",
     "scope": [
-      "entity.name.type.interface"
+      "entity.name.type.interface",
+      "entity.name.type.alias"
     ],
     "settings": {
       "foreground": "#c75d20"
@@ -718,16 +719,6 @@
   // Semantic token (LSP-provided) colors
   "semanticHighlighting": true,
   "semanticTokenColors": {
-  "decorator": "#52666d",
-  "variable.mutable": { "underline": true },
-  "const.constant": "#009c8f",
-
-  // Rust
-  "*.attribute:rust": "#52666d",
-  "derive.library:rust": "#c75d20",
-  "deriveHelper.library:rust": "#c75d20",
-  "string.attribute:rust": "#009c8f",
-
   // Selectors with TextMate scoped token fallback settings.
   "namespace": "#cb4c99",
   "type": "#b38800",
@@ -748,7 +739,18 @@
   "property": "#384c52",
   "property.readonly": "#384c52",
   "enumMember": "#384c52",
-  "event": "#384c52"
+  "event": "#384c52",
+
+  "decorator": "#52666d",
+  "variable.mutable": { "underline": true },
+  "const.constant": "#009c8f",
+  "type.declaration": "#c75d20",
+
+  // Rust
+  "*.attribute:rust": "#52666d",
+  "derive.library:rust": "#c75d20",
+  "deriveHelper.library:rust": "#c75d20",
+  "string.attribute:rust": "#009c8f"
 }
 
 }
