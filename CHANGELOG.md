@@ -4,6 +4,7 @@
 
 * Set `variable.defaultLibrary` semantic scope highlight to
   green.
+* Italicize all semantic `*.defaultLibrary` tokens.
 
 ## 0.3.7 | 2024-05-29
 

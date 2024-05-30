@@ -268,7 +268,7 @@
       "variable.other.constant.property"
     ],
     "settings": {
-      "foreground": "#92a1a1"
+      "foreground": "#829496"
     }
   },
   {
@@ -737,11 +737,12 @@
   "variable.readonly": "#92a1a1",
   "variable.readonly.defaultLibrary": "#cf4b15",
   "parameter": "#829496",
-  "property": "#92a1a1",
+  "property": "#829496",
   "property.readonly": "#92a1a1",
   "enumMember": "#92a1a1",
   "event": "#92a1a1",
 
+  "*.defaultLibrary": { "italic": true },
   "decorator": "#829496",
   "variable.mutable": { "underline": true },
   "const.constant": "#1fa198",
