@@ -733,6 +733,7 @@
   "method": "#0073d2",
   "macro": "#7d64c5",
   "variable": "#52666d",
+  "variable.defaultLibrary": "#539100",
   "variable.readonly": "#384c52",
   "variable.readonly.defaultLibrary": "#c75d20",
   "parameter": "#52666d",

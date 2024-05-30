@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.3.8 | 2024-05-30
+
+* Set `variable.defaultLibrary` semantic scope highlight to
+  green.
+
 ## 0.3.7 | 2024-05-29
 
 * Set type alias highlight color == interface == orange.
