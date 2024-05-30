@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.10 | TODO
+
+* Make numeric constants magenta so they can stand out more.
+
 ## 0.3.9 | 2024-05-30
 
 * Fix workbench's editor sticky scroll backgrounds and shadow.

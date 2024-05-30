@@ -312,7 +312,8 @@
       "entity.other.inherited-class",
       "support.class",
       "meta.class.js",
-      "variable.other.readwrite.alias.js"
+      "variable.other.readwrite.alias.js",
+      "variable.other.object.js"
     ],
     "settings": {
       "foreground": "#539100"
@@ -399,7 +400,7 @@
       "variable.other.constant"
     ],
     "settings": {
-      "foreground": "#539100"
+      "foreground": "#cb4c99"
     }
   },
   {
