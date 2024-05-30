@@ -146,7 +146,6 @@
 
   // Integrated Terminal colors
   "terminal.background": "#fef3da",
-  "terminal.border": "#8f9894",
   "terminal.foreground": "#384c52",
   "terminal.selectionBackground": "#f0e4cc",
   "terminalCursor.background": "#f0e4cc",
