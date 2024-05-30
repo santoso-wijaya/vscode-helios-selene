@@ -1,4 +1,4 @@
-# Solarized and Selenized for VS Code
+# 🌤️ Solarized and Selenized 🌖 for VS Code
 
 [Solarized](https://ethanschoonover.com/solarized/) is a sixteen color palette
 (eight monotones, eight accent colors) designed by Ethan Schoonover.
@@ -12,8 +12,8 @@ The color values and comparison between both can be seen in this
 
 This extension contains the following color themes and variants:
 
-* Selenized Light
-* Selenized Dark
+* Selenized Light 🌖
+* Selenized Dark 🌒
 * Solarized Light
 * Solarized Dark
 
@@ -21,7 +21,7 @@ This extension contains the following color themes and variants:
 
 ### Workbench (UI)
 
-(Selene) Selenized Light and Dark
+(Selene) Selenized Light 🌖 and Dark 🌒
 
 ![Selenized Light workbench screenshot](assets/screenshot-workbench-selenized-light.png "Selenized Light workbench")
 
@@ -29,7 +29,7 @@ This extension contains the following color themes and variants:
 
 ### Editor
 
-(Selene) Selenized Light and Dark
+(Selene) Selenized Light 🌖 and Dark 🌒
 
 ![Selenized Light editor screenshot](assets/screenshot-editor-selenized-light.png "Selenized Light editor")
 
