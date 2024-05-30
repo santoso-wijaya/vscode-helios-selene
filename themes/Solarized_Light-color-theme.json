@@ -229,11 +229,7 @@
   },
   {
     "name": "Keywords",
-    "scope": [
-      "keyword.control",
-      "keyword.other",
-      "keyword"
-    ],
+    "scope": "keyword",
     "settings": {
       "foreground": "#bb8801"
     }
@@ -259,11 +255,9 @@
   {
     "name": "Variables",
     "scope": [
-      "variable.parameter",
-      "variable.other.readwrite",
-      "support.variable",
+      "variable",
       "entity.name.variable",
-      "variable"
+      "support.variable"
     ],
     "settings": {
       "foreground": "#637b82"
@@ -283,8 +277,6 @@
     "name": "Functions and Methods",
     "scope": [
       "entity.name.function",
-      "entity.name.function.declaration",
-      "entity.name.function.member",
       "support.function"
     ],
     "settings": {
@@ -306,7 +298,6 @@
       "entity.name.type",
       "support.type",
       "storage.type",
-      "storage.type.struct",
       "storage"
     ],
     "settings": {
@@ -383,18 +374,6 @@
     ],
     "settings": {
       "foreground": "#cf4b15"
-    }
-  },
-  {
-    "name": "Golang - misc",
-    "scope": [
-      "entity.name.import.go",
-      "entity.name.type.go",
-      "variable.other.assignment.go",
-      "variable.other.go"
-    ],
-    "settings": {
-      "foreground": "#8d9800"
     }
   },
   {
@@ -560,7 +539,7 @@
     }
   },
   {
-    "name": "CSS: Important Keyword",
+    "name": "Important Keywords",
     "scope": "keyword.other.important",
     "settings": {
       "fontStyle": "bold"
@@ -733,7 +712,19 @@
     "settings": {
       "foreground": "#008dd1"
     }
-  }
+  },
+  {
+    "name": "Golang - misc",
+    "scope": [
+      "entity.name.import.go",
+      "entity.name.type.go",
+      "variable.other.assignment.go",
+      "variable.other.go"
+    ],
+    "settings": {
+      "foreground": "#8d9800"
+    }
+  },
 ]
 ,
 
