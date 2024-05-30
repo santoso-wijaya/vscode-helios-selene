@@ -1,9 +1,12 @@
 # Change Log
 
+## 0.3.9 | TODO
+
+* Fix workbench's editor sticky scroll backgrounds and shadow.
+
 ## 0.3.8 | 2024-05-30
 
-* Set `variable.defaultLibrary` semantic scope highlight to
-  green.
+* Set `variable.defaultLibrary` semantic scope highlight to green.
 * Italicize all semantic `*.defaultLibrary` tokens.
 
 ## 0.3.7 | 2024-05-29
