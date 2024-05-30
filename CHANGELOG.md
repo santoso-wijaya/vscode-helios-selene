@@ -1,8 +1,10 @@
 # Change Log
 
-## 0.3.9 | TODO
+## 0.3.9 | 2024-05-30
 
 * Fix workbench's editor sticky scroll backgrounds and shadow.
+* Define catch-all keywords and operators token highlight colors.
+* Define golang-specific accent color (green).
 
 ## 0.3.8 | 2024-05-30
 

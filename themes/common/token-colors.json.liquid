@@ -90,11 +90,18 @@
     "name": "Keywords",
     "scope": [
       "keyword.control",
-      "keyword.operator",
-      "keyword.other"
+      "keyword.other",
+      "keyword"
     ],
     "settings": {
       "foreground": "#{{ yellow }}"
+    }
+  },
+  {
+    "name": "Operators",
+    "scope": "keyword.operator",
+    "settings": {
+      "foreground": "#{{ fg_0 }}"
     }
   },
   {
@@ -114,7 +121,8 @@
       "variable.parameter",
       "variable.other.readwrite",
       "support.variable",
-      "entity.name.variable"
+      "entity.name.variable",
+      "variable"
     ],
     "settings": {
       "foreground": "#{{ fg_0 }}"
@@ -218,7 +226,8 @@
   {
     "name": "Namespace",
     "scope": [
-      "entity.name.namespace"
+      "entity.name.namespace",
+      "entity.name.type.package.go",
     ],
     "settings": {
       "foreground": "#{{ magenta }}"
@@ -233,6 +242,18 @@
     ],
     "settings": {
       "foreground": "#{{ orange }}"
+    }
+  },
+  {
+    "name": "Golang - misc",
+    "scope": [
+      "entity.name.import.go",
+      "entity.name.type.go",
+      "variable.other.assignment.go",
+      "variable.other.go"
+    ],
+    "settings": {
+      "foreground": "#{{ green }}"
     }
   },
   {

@@ -231,11 +231,18 @@
     "name": "Keywords",
     "scope": [
       "keyword.control",
-      "keyword.operator",
-      "keyword.other"
+      "keyword.other",
+      "keyword"
     ],
     "settings": {
       "foreground": "#bb8801"
+    }
+  },
+  {
+    "name": "Operators",
+    "scope": "keyword.operator",
+    "settings": {
+      "foreground": "#637b82"
     }
   },
   {
@@ -255,7 +262,8 @@
       "variable.parameter",
       "variable.other.readwrite",
       "support.variable",
-      "entity.name.variable"
+      "entity.name.variable",
+      "variable"
     ],
     "settings": {
       "foreground": "#637b82"
@@ -359,7 +367,8 @@
   {
     "name": "Namespace",
     "scope": [
-      "entity.name.namespace"
+      "entity.name.namespace",
+      "entity.name.type.package.go",
     ],
     "settings": {
       "foreground": "#f2579c"
@@ -374,6 +383,18 @@
     ],
     "settings": {
       "foreground": "#cf4b15"
+    }
+  },
+  {
+    "name": "Golang - misc",
+    "scope": [
+      "entity.name.import.go",
+      "entity.name.type.go",
+      "variable.other.assignment.go",
+      "variable.other.go"
+    ],
+    "settings": {
+      "foreground": "#8d9800"
     }
   },
   {
@@ -744,6 +765,7 @@
 
   "*.defaultLibrary": { "italic": true },
   "decorator": "#637b82",
+  "operator": "#637b82",
   "variable.mutable": { "underline": true },
   "const.constant": "#1fa198",
   "type.declaration": "#cf4b15",
