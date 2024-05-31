@@ -90,11 +90,12 @@
   // Selectors with TextMate scoped token fallback settings.
   "namespace": "#{{ magenta }}",
   "type": "#{{ yellow }}",
-  "type.defaultLibrary": "#{{ yellow }}",
+  "type.defaultLibrary": { "foreground": "#{{ yellow }}", "italic": true },
   "struct": "#{{ green }}",
   "class": "#{{ green }}",
-  "class.defaultLibrary": "#{{ green }}",
+  "class.defaultLibrary": { "foreground": "#{{ green }}", "italic": true },
   "interface": "#{{ orange }}",
+  "interface.defaultLibrary": { "foreground": "#{{ orange }}", "italic": true },
   "enum": "#{{ green }}",
   "function": "#{{ blue }}",
   "function.defaultLibrary": "#{{ blue }}",
@@ -110,7 +111,6 @@
   "enumMember": "#{{ fg_1 }}",
   "event": "#{{ fg_1 }}",
 
-  "*.defaultLibrary": { "italic": true },
   "decorator": "#{{ fg_0 }}",
   "operator": "#{{ fg_0 }}",
   "variable.mutable": { "underline": true },

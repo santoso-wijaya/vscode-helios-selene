@@ -737,11 +737,12 @@
   // Selectors with TextMate scoped token fallback settings.
   "namespace": "#cb4c99",
   "type": "#b38800",
-  "type.defaultLibrary": "#b38800",
+  "type.defaultLibrary": { "foreground": "#b38800", "italic": true },
   "struct": "#539100",
   "class": "#539100",
-  "class.defaultLibrary": "#539100",
+  "class.defaultLibrary": { "foreground": "#539100", "italic": true },
   "interface": "#c75d20",
+  "interface.defaultLibrary": { "foreground": "#c75d20", "italic": true },
   "enum": "#539100",
   "function": "#0073d2",
   "function.defaultLibrary": "#0073d2",
@@ -757,7 +758,6 @@
   "enumMember": "#384c52",
   "event": "#384c52",
 
-  "*.defaultLibrary": { "italic": true },
   "decorator": "#52666d",
   "operator": "#52666d",
   "variable.mutable": { "underline": true },
