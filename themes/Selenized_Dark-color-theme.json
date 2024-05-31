@@ -228,7 +228,10 @@
   },
   {
     "name": "Keywords",
-    "scope": "keyword",
+    "scope": [
+      "keyword.operator.new",
+      "keyword"
+    ],
     "settings": {
       "foreground": "#e3b230"
     }
