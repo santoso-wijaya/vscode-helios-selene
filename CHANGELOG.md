@@ -3,6 +3,8 @@
 ## 0.3.10 | TODO
 
 * Make numeric constants magenta so they can stand out more.
+* Minor tweaks to other syntax highlights.
+* Set editor selection and word highlight background shades.
 
 ## 0.3.9 | 2024-05-30
 
