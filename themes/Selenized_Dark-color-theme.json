@@ -268,7 +268,7 @@
       "support.variable"
     ],
     "settings": {
-      "foreground": "#adbcbc"
+      "foreground": "#c8d7d8"
     }
   },
   {
@@ -321,7 +321,8 @@
       "support.class",
       "meta.class.js",
       "variable.other.readwrite.alias.js",
-      "variable.other.object.js"
+      "variable.other.object.js",
+      "storage.type.protobuf"
     ],
     "settings": {
       "foreground": "#80b83c"

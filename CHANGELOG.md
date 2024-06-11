@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.12 | TODO
+
+* Tweak protobuf syntax highlights.
+
 ## 0.3.11 | 2024-06-10
 
 * Set Activity Bar active colors.
