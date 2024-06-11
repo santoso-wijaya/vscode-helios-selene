@@ -3,6 +3,7 @@
 ## 0.3.12 | TODO
 
 * Tweak protobuf syntax highlights.
+* Include TextMate scope "brackets" in the punctuations group.
 
 ## 0.3.11 | 2024-06-10
 

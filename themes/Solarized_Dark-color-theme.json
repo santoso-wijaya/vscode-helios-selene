@@ -457,7 +457,10 @@
   },
   {
     "name": "Punctuation",
-    "scope": "punctuation",
+    "scope": [
+      "punctuation",
+      "brackets"
+    ],
     "settings": {
       "foreground": "#829496"
     }
