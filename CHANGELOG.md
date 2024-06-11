@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.11 | 2024-06-10
+
+* Set Activity Bar active colors.
+
 ## 0.3.10 | 2024-05-31
 
 * Make numeric constants magenta so they can stand out more.
