@@ -278,7 +278,7 @@
       "variable.other.constant.property"
     ],
     "settings": {
-      "foreground": "#52666d"
+      "foreground": "#384c52"
     }
   },
   {
@@ -758,12 +758,12 @@
   "function.defaultLibrary": "#0073d2",
   "method": "#0073d2",
   "macro": "#7d64c5",
-  "variable": "#52666d",
+  "variable": "#384c52",
   "variable.defaultLibrary": "#539100",
   "variable.readonly": "#384c52",
   "variable.readonly.defaultLibrary": "#c75d20",
-  "parameter": "#52666d",
-  "property": "#52666d",
+  "parameter": "#384c52",
+  "property": "#384c52",
   "property.readonly": "#384c52",
   "enumMember": "#384c52",
   "event": "#384c52",

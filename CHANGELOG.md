@@ -4,6 +4,7 @@
 
 * Tweak protobuf syntax highlights.
 * Include TextMate scope "brackets" in the punctuations group.
+* Variables and parameters should get the {{ fg_1 }} default foreground shade.
 
 ## 0.3.11 | 2024-06-10
 
