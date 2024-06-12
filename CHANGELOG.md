@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.3.12 | TODO
+## 0.3.12 | 2024-06-12
 
 * Tweak protobuf syntax highlights.
 * Include TextMate scope "brackets" in the punctuations group.
