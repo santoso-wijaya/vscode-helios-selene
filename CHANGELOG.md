@@ -3,6 +3,7 @@
 ## 0.3.15 | 2024-06-12
 
 * Increase contrast in activity bar foreground (used in icons).
+* Increase contrast in HTML tags.
 
 ## 0.3.12 | 2024-06-12
 
