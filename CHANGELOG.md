@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.15 | 2024-06-12
+
+* Increase contrast in activity bar foreground (used in icons).
+
 ## 0.3.12 | 2024-06-12
 
 * Tweak protobuf syntax highlights.
