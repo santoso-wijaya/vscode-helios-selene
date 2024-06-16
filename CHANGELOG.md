@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.16 | 2024-06-15
+
+* Make HTML attributes less dim.
+
 ## 0.3.15 | 2024-06-12
 
 * Increase contrast in activity bar foreground (used in icons).

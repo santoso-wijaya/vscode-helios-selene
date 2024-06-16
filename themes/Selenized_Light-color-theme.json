@@ -481,7 +481,6 @@
   {
     "name": "HTML: Tags",
     "scope": [
-      "meta.tag",
       "punctuation.definition.tag.html",
       "punctuation.definition.tag.begin.html",
       "punctuation.definition.tag.end.html"
@@ -506,7 +505,7 @@
     ],
     "settings": {
       "fontStyle": "italic",
-      "foreground": "#8f9894"
+      "foreground": "#52666d"
     }
   },
   {
