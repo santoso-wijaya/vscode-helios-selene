@@ -21,6 +21,7 @@
   "disabledForeground": "#92a1a1",
   "focusBorder": "#cf4b1599",
   "selection.background": "#f0e7d5",
+  "errorForeground": "e0332e",
 
   // Action colors
   "toolbar.hoverBackground": "#d7cebc80",
@@ -54,6 +55,8 @@
   "list.focusBackground": "#bb880166",
   "list.hoverBackground": "#bb880144",
   "list.highlightForeground": "#bb8801",
+  "list.errorForeground": "#e0332e",
+  "list.warningForeground": "#bb8801",
 
   // Activity Bar
   "activityBar.background": "#d7cebc",
