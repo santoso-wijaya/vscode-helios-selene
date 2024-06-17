@@ -21,7 +21,7 @@
   "disabledForeground": "#8f9894",
   "focusBorder": "#c75d2099",
   "selection.background": "#f0e4cc",
-  "errorForeground": "d4212b",
+  "errorForeground": "#d4212b",
 
   // Action colors
   "toolbar.hoverBackground": "#d6cbb480",
