@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.17 | TODO
+
+* Make active tab foreground {{ fg_1 }}.
+
 ## 0.3.16 | 2024-06-15
 
 * Make HTML attributes less dim.

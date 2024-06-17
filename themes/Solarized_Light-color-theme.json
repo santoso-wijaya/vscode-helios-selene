@@ -76,6 +76,7 @@
   "editorGroupHeader.border": "#d7cebc",
   "tab.border": "#92a1a1",
   "tab.activeBackground": "#fff6e3",
+  "tab.activeForeground": "#566e76",
   "tab.inactiveForeground": "#637b82",
   "tab.inactiveBackground": "#d7cebc",
   "tab.activeModifiedBorder": "#bb8801",
