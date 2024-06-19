@@ -1,6 +1,6 @@
 # Change Log
 
-## 0.3.17 | TODO
+## 0.3.17 | 2024-06-16
 
 * Make active tab foreground {{ fg_1 }}.
 * Workbench: set list error and warning foreground colors.
