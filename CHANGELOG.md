@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.18 | TODO
+
+* Tweak statement highlights.
+
 ## 0.3.17 | 2024-06-16
 
 * Make active tab foreground {{ fg_1 }}.
