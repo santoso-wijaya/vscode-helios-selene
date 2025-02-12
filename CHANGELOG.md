@@ -1,8 +1,9 @@
 # Change Log
 
-## 0.3.18 | TODO
+## 0.3.18 | 2025-02-11
 
 * Tweak statement highlights.
+* Set "property" semantic token for Python to violet.
 
 ## 0.3.17 | 2024-06-16
 

@@ -783,7 +783,10 @@
   "*.attribute:rust": "#829496",
   "derive.library:rust": "#cf4b15",
   "deriveHelper.library:rust": "#cf4b15",
-  "string.attribute:rust": "#1fa198"
+  "string.attribute:rust": "#1fa198",
+
+  //Python
+  "property:python": "#5c73c4"
 }
 
 }
